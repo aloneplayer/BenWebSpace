@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="PicScroller.css" rel="stylesheet" type="text/css" />
+    <script src="../jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="PicScroller.js" type="text/javascript"></script>
+</head>
+<body>
+    <p>
+        原理： 用javascript在div PicrollCont中动态生成套着一个超长的div，再在这个div生成两份图片队列，首尾相连
+        <br />
+        参考：
+        <br />
+        <a href="http://www.readannals.com/forum/thread-242310-1-1.html">http://www.readannals.com/forum/thread-242310-1-1.html</a>
+    </p>
+    <div id="bigqi_pic_cont" class="Picrollbody">
+        <div id="leftButton" class="leftButton">
+        </div>
+        <div id="PicrollCont" class="PicrollCont">
+            <div class="box">
+                <a target="_blank" class="imgborder" href="detail.htm">
+                    <img width="124" height="84" border="0" src="./Images/book-thumbnail.jpg" alt="《胡适晚年谈话录》  何兆武" /></a>
+                <p>
+                    <a target="_blank" href="detail.htm">《胡适晚年谈话录》 何兆武</a>
+                </p>
+            </div>
+            <div class="box">
+                <a target="_blank" class="imgborder" href="detail.htm">
+                    <img width="124" height="84" border="0" src="./Images/75422_130_90.jpg" alt="《胡适晚年谈话录》  何兆武" /></a>
+                <p>
+                    <a target="_blank" href="detail.htm">《胡适晚年谈话录》 何兆武</a>
+                </p>
+            </div>
+            <div class="box">
+                <a target="_blank" class="imgborder" href="detail.htm">
+                    <img width="124" height="84" border="0" src="./Images/66827_130_90.jpg" alt="《胡适晚年谈话录》  何兆武" /></a>
+                <p>
+                    <a target="_blank" href="detail.htm">《胡适晚年谈话录》 何兆武</a>
+                </p>
+            </div>
+            <div class="box">
+                <a target="_blank" class="imgborder" href="detail.htm">
+                    <img width="124" height="84" border="0" src="./Images/60962_130_90.jpg" alt="《胡适晚年谈话录》  何兆武" /></a>
+                <p>
+                    <a target="_blank" href="detail.htm">《胡适晚年谈话录》 何兆武</a>
+                </p>
+            </div>
+        </div>
+        <div id="rightButton" class="rightButton">
+        </div>
+        <script type="text/javascript">
+
+            var picScroller = new PicScroller();
+            picScroller.scrollContId = "#PicrollCont";
+            picScroller.leftButtonId = "#leftButton";
+            picScroller.rightButtonId = "#rightButton";
+            picScroller.autoPlayTime = 20;
+            picScroller.autoPlaySpace = 1;
+            picScroller.autoPlay = true;
+            picScroller.initialize();
+
+        </script>
+</body>
+</html>

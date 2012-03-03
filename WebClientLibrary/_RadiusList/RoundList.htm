@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>圆角列表</title>
+    <link href="round.css" rel="stylesheet" type="text/css" />
+    <script src="../jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="JQuery.backgroundCanvas.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ()
+        {
+            jQuery(".slacking-class").backgroundCanvas();
+            jQuery(".ontrack-class").backgroundCanvas();
+            //jQuery(".summary-class").backgroundCanvas();
+        });
+        jQuery(window).load(function () { DrawBackground(); });
+        jQuery(window).resize(function () { DrawBackground(); });
+
+        function DrawBackground()
+        {
+            jQuery(".slacking-class").backgroundCanvasPaint(SlackingBox);
+            jQuery(".ontrack-class").backgroundCanvasPaint(OnTrackBox);
+            //jQuery(".summary-class").backgroundCanvasPaint(SummaryBox);
+        }
+
+        function SkyBlueBox(context, width, height, elementInfo)
+        {
+
+            var options = { x: 0, height: height, width: width,
+                radius: 10, border: 0
+            };
+
+            // Draw the red border rectangle
+            context.fillStyle = "#45ABEC";
+            jQuery.canvasPaint.roundedRect(context, options);
+
+            // Draw the gradient filled inner rectangle
+            var backgroundGradient = context.createLinearGradient(0, 0, 0, height - 10);
+
+            backgroundGradient.addColorStop(0, '#FFFFFF');
+            backgroundGradient.addColorStop(1, '#45ABEC');
+
+            options.border = 0;
+            context.fillStyle = backgroundGradient;
+            jQuery.canvasPaint.roundedRect(context, options);
+        }
+
+        function GreenBox(context, width, height, elementInfo)
+        {
+
+            var options = { x: 0, height: height, width: width,
+                radius: 10, border: 0
+            };
+
+            // Draw the red border rectangle
+            context.fillStyle = "#45ABEC";
+            jQuery.canvasPaint.roundedRect(context, options);
+
+            // Draw the gradient filled inner rectangle
+            var backgroundGradient = context.createLinearGradient(0, 0, 0, height - 10);
+
+            backgroundGradient.addColorStop(0, '#FFFFFF');
+            backgroundGradient.addColorStop(1, '#8db100');
+
+            options.border = 0;
+            context.fillStyle = backgroundGradient;
+            jQuery.canvasPaint.roundedRect(context, options);
+        }
+
+        function OnTrackBox(context, width, height, elementInfo)
+        {
+
+            var options = { x: 0, height: height, width: width,
+                radius: 10, border: 0
+            };
+
+            // Draw the red border rectangle
+            context.fillStyle = "#00FF00";
+            jQuery.canvasPaint.roundedRect(context, options);
+
+            // Draw the gradient filled inner rectangle
+            var backgroundGradient = context.createLinearGradient(0, 0, 0, height - 10);
+
+            backgroundGradient.addColorStop(0, '#FFFFFF');
+            backgroundGradient.addColorStop(1, '#6DA31D');
+
+            options.border = 0;
+            context.fillStyle = backgroundGradient;
+            jQuery.canvasPaint.roundedRect(context, options);
+        }
+
+        function SlackingBox(context, width, height, elementInfo)
+        {
+
+            var options = { x: 0, height: height, width: width,
+                radius: 10, border: 0
+            };
+
+            // Draw the red border rectangle
+            context.fillStyle = "#FF0000";
+            jQuery.canvasPaint.roundedRect(context, options);
+
+            // Draw the gradient filled inner rectangle
+            var backgroundGradient = context.createLinearGradient(0, 0, 0, height - 10);
+
+            backgroundGradient.addColorStop(0, '#FFFFFF');
+            backgroundGradient.addColorStop(1, '#DC1A2E');
+
+            options.border = 0;
+            context.fillStyle = backgroundGradient;
+            jQuery.canvasPaint.roundedRect(context, options);
+        }
+
+        function SummaryBox(context, width, height, elementInfo)
+        {
+
+            var options = { x: 0, height: height, width: width,
+                radius: 10, border: 0
+            };
+
+            // Draw the red border rectangle
+            context.fillStyle = "#b1dcf7";
+            jQuery.canvasPaint.roundedRect(context, options);
+
+            // Draw the gradient filled inner rectangle
+            var backgroundGradient = context.createLinearGradient(0, 0, 0, height - 10);
+
+            backgroundGradient.addColorStop(0, '#FFFFFF');
+            backgroundGradient.addColorStop(1, '#45ABEC');
+
+            options.border = 0;
+            context.fillStyle = backgroundGradient;
+            jQuery.canvasPaint.roundedRect(context, options);
+        }
+ 
+    </script>
+</head>
+<body>
+    <p>
+        From rootein.com
+    </p>
+    <p>
+        使用JQuery.backgroundCanvas.js渲染出渐进色
+    </p>
+    <p>
+        用到了 -moz-border-radius系列css，IE只在Div上支持-moz-border-radius系列css,
+    </p>
+    <div id="home_content" class="content tl tr bl br">
+        <div class="home-columns">
+            <h4 class="center tl tr column-head">
+                You are on target on</h4>
+            <div class="column-bottom ontrack-class" id="onTrack">
+                <p class="center">
+                    You are not on target on any of your Rooteins</p>
+            </div>
+        </div>
+        <!--Sample  -->
+        <div class="span-7 append-1 home-columns" id="column-1">
+            <h4 class="center tl tr column-head" id="slack-head">
+                You are slacking on</h4>
+            <div class="tasks column-bottom bl br slacking-class" id="slack">
+                <table>
+                    <tbody>
+                        <tr id="task_11242" class="task">
+                            <!-- same as <li id="task_11242"></li> -->
+                            <td class="span-1">
+                                <!-- <div class="badge -->
+                                <!-- center handle"> -->
+                                <a class="task-link" href="/tasks/11242">
+                                    <div class="badge orange center handle">
+                                        0 <span class="days">days </span>
+                                    </div>
+                                </a>
+                                <!-- </div> -->
+                            </td>
+                            <td class="task_name">
+                                <a class="task-link" href="/tasks/11242">0:00点之前睡觉</a>
+                            </td>
+                        </tr>
+                        <tr id="task_11243" class="task">
+                            <!-- same as <li id="task_11243"></li> -->
+                            <td class="span-1">
+                                <!-- <div class="badge -->
+                                <!-- center handle"> -->
+                                <a class="task-link" href="/tasks/11243">
+                                    <div class="badge orange center handle">
+                                        0 <span class="days">days </span>
+                                    </div>
+                                </a>
+                                <!-- </div> -->
+                            </td>
+                            <td class="task_name">
+                                <a class="task-link" href="/tasks/11243">6:00起床</a>
+                            </td>
+                        </tr>
+                        <tr id="task_11246" class="task">
+                            <!-- same as <li id="task_11246"></li> -->
+                            <td class="span-1">
+                                <!-- <div class="badge -->
+                                <!-- center handle"> -->
+                                <a class="task-link" href="/tasks/11246">
+                                    <div class="badge orange center handle">
+                                        0 <span class="days">days </span>
+                                    </div>
+                                </a>
+                                <!-- </div> -->
+                            </td>
+                            <td class="task_name">
+                                <a class="task-link" href="/tasks/11246">No Smoking</a>
+                            </td>
+                        </tr>
+                        <tr id="task_11247" class="task">
+                            <!-- same as <li id="task_11247"></li> -->
+                            <td class="span-1">
+                                <!-- <div class="badge -->
+                                <!-- center handle"> -->
+                                <a class="task-link" href="/tasks/11247">
+                                    <div class="badge orange center handle">
+                                        0 <span class="days">days </span>
+                                    </div>
+                                </a>
+                                <!-- </div> -->
+                            </td>
+                            <td class="task_name">
+                                <a class="task-link" href="/tasks/11247">读书1小时</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

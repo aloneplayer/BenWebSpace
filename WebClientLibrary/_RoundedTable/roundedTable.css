@@ -1,0 +1,138 @@
+﻿BODY
+{
+    font-size: 8pt;
+    color: #000066;
+    font-family: verdana;
+    background-color: #94BEE7; /*和Rounded Table的倒角匹配*/
+}
+
+/*
+td
+{
+    border: solid 1px red;
+}
+*/
+
+/* RoundedTableControl classes */
+.RoundedTable
+{
+    border-collapse: collapse;
+    width: 100%;
+    background: #94bee7;
+    border: 0px none; /*border:solid 1px red;*/ /*for debuggin*/
+}
+
+.RoundedTableOuterBorder
+{
+    background: #31569c;
+}
+
+.RoundedTableLabel
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.RoundedTableLightInfo, .RoundedTableLightInfoL, .RoundedTableLightInfoR, .RoundedTableLightInfoB, .RoundedTableLightInfoBL, .RoundedTableLightInfoBR
+{
+    background: #ffffff;
+}
+
+.RoundedTableDarkFooterB, .RoundedTableDarkInfo, .RoundedTableDarkInfoL, .RoundedTableDarkInfoR, .RoundedTableDarkInfoB, .RoundedTableDarkInfoBL, .RoundedTableDarkInfoBR
+{
+    background: #eff7ff;
+}
+
+
+.RoundedTableLightHeaderTL, .RoundedTableLightHeaderTR, .RoundedTableDarkHeaderTL, .RoundedTableDarkHeaderTR
+{
+    padding: 0px;
+    height: 30px;
+    width: 10px;
+}
+
+.RoundedTableDarkHeaderText
+{
+    font-family: Verdana;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+}
+
+.RoundedTableLightHeaderText
+{
+    font-family: Verdana;
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+}
+
+.RoundedTableLightHeaderTL
+{
+    background-image: url('images/light_topleft.gif');
+}
+
+.RoundedTableLightHeaderTR
+{
+    background-image: url('images/light_topright.gif');
+}
+
+.RoundedTableDarkHeaderTL
+{
+    background-image: url('images/dark_topleft.gif');
+}
+
+.RoundedTableDarkHeaderTR
+{
+    background-image: url('images/dark_topright.gif');
+}
+
+.RoundedTableDarkFooterBL
+{
+    background-image: url('images/light_bottomleft.gif');
+}
+
+.RoundedTableDarkFooterBR
+{
+    background-image: url('images/light_bottomright.gif');
+}
+
+.RoundedTableLightHeader, .RoundedTableLightHeaderT, .RoundedTableLightHeaderL, .RoundedTableLightHeaderR
+{
+    font-family: Verdana;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    height: 29;
+    background-image: url('images/light_shading.gif');
+}
+
+.RoundedTableDarkHeader, .RoundedTableDarkHeaderT, .RoundedTableDarkHeaderL, .RoundedTableDarkHeaderR
+{
+    font-family: Verdana;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    height: 29;
+    background-image: url('images/dark_shading.gif');
+}
+
+.RoundedTableDarkFooterB, .RoundedTableDarkFooterBL, .RoundedTableDarkFooterBR
+{
+    font-family: Verdana;
+    font-size: 1pt;
+    padding: 0px;
+}
+
+.RoundedTableDarkFooterB
+{
+    height: 9px;
+}
+
+.RoundedTableDarkFooterBL, .RoundedTableDarkFooterBR
+{
+    height: 10px;
+    width: 10px;
+}
+

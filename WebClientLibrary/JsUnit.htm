@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JUnit Study</title>
+    <script type="text/javascript" src="JsUnit/app/jsUnitCore.js"></script>
+    <script type="text/javascript">
+
+      function setUp(){  
+     alert("setUp");  
+}  
+   
+ function tearDown(){  
+     alert("tearDown");  
+ } 
+
+        function testStrictReturnType()
+        {
+            assertNotEquals("Should return a number, not a string", "11", multiplyAndAddFive(2, 3));
+        }
+
+
+        var count = 0;
+
+        function setUp() //类比于JUnit中的setUp
+        {
+            count++;
+        }
+
+        function tearDown() //类比于JUnit中的tearDown
+        {
+
+        }
+
+        // 测试函数
+        function testAdd()
+        {
+            var result = add(4, 2);
+            assertEquals(6, result);
+        }
+
+        function testMinus()
+        {
+            var result = minus(4, 2);
+            assertEquals(2, result);
+        }
+
+        function testMultiply()
+        {
+            var result = multiply(4, 2);
+            assertEquals(8, result);
+        }
+
+        function testDivide()
+        {
+            var result = divide(4, 2);
+            assertEquals(2, result);
+        }
+
+        function testCount()
+        {
+            alert(count);
+        }
+    </script>
+</head>
+<body>
+    This is a Test Page for multiplyAndAddFive(arg1, arg2).
+</body>
+</html>

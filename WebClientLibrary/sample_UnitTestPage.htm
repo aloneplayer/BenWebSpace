@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="jsunit/app/jsUnitCore.js"></script>
+    <script type="text/javascript" src="sample.js"></script>
+    <script type="text/javascript">
+        // Init testing for page
+        function setUpPage()
+        {
+            alert("setUpPage");
+            //Must do it
+            setUpPageStatus = "complete";
+        }
+
+        // Init testing for case
+        function setUp()
+        {
+            alert("setUp");
+        }
+
+        // Clear for case
+        function tearDown()
+        {
+            alert("tearDown");
+        }
+
+        function testAdd()
+        {
+            var result = add(4, 2)
+            assertEquals(6, result);
+        }
+
+        function testMinus()
+        {
+            var result = minus(4, 2)
+            assertEquals(2, result);
+        }
+
+        function testMultiply()
+        {
+            debug("asdfasdf", 1000);
+            var result = multiply(4, 2)
+            assertEquals(8, result);
+        }
+
+        function testDivide()
+        {
+            var result = divide(4, 2)
+            assertEquals("4 divide 2 is 2", 2, result);
+        }
+
+        //显式指定测试函数
+        //        function exposeTestFunctionNames()
+        //        {
+        //            var tests = new Array(2);
+        //            tests[0] = "testAdd";
+        //            tests[1] = "testMinus";
+        //            return tests;
+        //        }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image In Textbox</title>
+    <script src="../jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <style type="text/css">
+        .header
+        {
+            float: right;
+            height: 35px;
+            padding: 7px 5px 8px 6px;
+            position: relative;
+        }
+        
+        input
+        {
+            border: 0 none;
+            outline: medium none;
+            padding: 4px 0 5px 3px;
+            vertical-align: middle;
+        }
+        
+        
+        .ipt
+        {
+            border-style: solid;
+            border-width: 1px;
+            float: left;
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="ipt homeEmailInput" style="border-color: rgb(193, 193, 193) rgb(220, 220, 220) rgb(222, 222, 222) rgb(222, 222, 222);">
+            <div style="border-color: rgb(237, 237, 237) rgb(237, 237, 237) rgb(255, 255, 255);">
+                <img alt="" src="images/input_email_bg.png" onclick="$('#loginEmail').focus();" />
+                <input type="text" maxlength="100" name="loginInfo[email]" id="loginEmail" gtbfieldid="1" />
+            </div>
+        </div>
+        <div class="ipt homePassInput" style="border-color: rgb(193, 193, 193) rgb(220, 220, 220) rgb(222, 222, 222) rgb(222, 222, 222);">
+            <div style="border-color: rgb(237, 237, 237) rgb(237, 237, 237) rgb(255, 255, 255);">
+                <img alt="" src="images/input_pass_bg.png" onclick="$('#loginPassword').focus();" />
+                <input type="password" name="loginInfo[password]" id="loginPassword" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

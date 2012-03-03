@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery UI</title>
+    <script src="Scripts/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <link href="styles/jQUI.css" rel="stylesheet" type="text/css" />
+    <script type="text/ecmascript">
+        $(function ()
+        {
+            startMenu();
+        });
+
+        function startMenu()
+        {
+            $("bar2").click(function ()
+            {
+                $("startMenu".stop().animate({height:"200"}));
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="canvas">
+        <div id="startBar">
+            <div id="startMenu">
+            </div>
+            <div id="bar1">
+            </div>
+            <div id="bar2">
+            </div>
+            <div id="bar3">
+            </div>
+        </div>
+        <div id="toolBar">
+        </div>
+    </div>
+</body>
+</html>

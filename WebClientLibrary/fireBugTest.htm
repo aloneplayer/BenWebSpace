@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JavaScript : Firebug Test</title>
+    <script src="jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(function ()
+        {
+            //Event handler
+            $("#button_console_time").click(consoleTimeTest);
+            $("#button_console_trace").click(function ()
+            {
+                console.trace();
+            });
+
+            //console output
+            console.info("## Using console.info() write information to console.");
+        });
+
+        function consoleTimeTest()
+        {
+            //设置计时器
+            console.time('create list');
+
+            for (i = 0; i < 1000; i++)
+            {
+                var myList = $('.myList');
+                myList.append('This is list item ' + i);
+            }
+
+            console.timeEnd('create list');
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li>我个人喜欢的功能是“console.info”，它能输出信息或变量，代替了弹出窗口的alert，</li>
+        <li>console.time 在一段代码间设置一个计时器，得出执行这段代码所用的时间。</li>
+    </ul>
+    <input type="button" id="button_console_time" value="console.time Test" />
+
+    <input type="button" id="button_console_trace" value="console.trace Test" />
+</body>
+</html>

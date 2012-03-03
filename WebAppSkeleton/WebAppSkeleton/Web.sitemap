@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    web.sitmap support localization and role control
+-->
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="$Resouces:"  description="">
+        <siteMapNode url="" title="$Resouces:"  description="" />
+        <siteMapNode url="" title="$Resouces:"  description="" />
+    </siteMapNode>
+    <siteMapNode title="$Resources: SiteMap, Admin" url="~/Admin/Default.aspx" roles="Administrators,Editors,Contributors">
+    </siteMapNode>
+</siteMap>
+

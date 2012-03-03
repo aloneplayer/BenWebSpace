@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Sample: AJAX</title>
+    <style type="text/css">
+        input#name
+        {
+            font-size: 24px;
+        }
+        #message
+        {
+            border: dashed 2px black;
+            font-size: 24px;
+        }
+       
+    </style>
+    <script src="jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function ()
+        {
+
+        });
+
+        $(function ()
+        {
+            // Load Html
+            $("#loadHtml").click(function ()
+            {
+                $("#newMessage").load("data/helloAjax.htm",
+                                      function ()
+                                      {
+                                          alert('Load was performed.');
+                                      });
+            });
+
+            // jQuyer Get
+            $("#jQueryGet").click(function ()
+            {
+                $.get("Server/ProcessAjaxGet.aspx",
+                { "Name": "HHuang",
+                    "Age": "35"
+                },
+                function (data)
+                {
+                    $('#AjaxGet').html(data);
+                });
+            });
+
+            // jQuyer Post
+            $("#jQueryPost").click(function ()
+            {
+                $.post("Server/ProcessAjaxPost.aspx",
+                {
+                    userName: $("#txtUser").val(),
+                 userPwd: $("#txtPassword").val()
+                },
+                function (data)
+                {
+                    $('#AjaxPost').html(data);
+                });
+            });
+
+
+            // jQuyer Ajax
+            $("#jQueryAjax").click(function ()
+            {
+                $.ajax({
+                    url: 'document.xml',
+                    type: 'GET',
+                    dataType: 'xml',
+                    timeout: 1000,
+                    error: function ()
+                    {
+                        alert('Error loading XML document');
+                    },
+                    success: function (xml)
+                    {
+                        // do something with xml
+                    }
+                });
+
+            });
+        });
+
+
+        function Login()
+        {
+            $.ajax({
+                type: "POST",
+                url: "CheckLogin.aspx",
+                data: { userName: $("#txtUser").val(), userPwd: $("#txtPassword").val() },
+                beforeSend: function () { $("#msg").html("logining"); },
+                success: function (data)
+                {
+                    $("#msg").html(decodeURI(data));
+                }
+            });
+        }
+
+    </script>
+</head>
+<body>
+    <h1>
+        jQuery Simple: AJAX</h1>
+    <div id="newMessage" style="border: 3px blue dotted;">
+        Html will be displayed here!</div>
+    <input id="loadHtml" type="button" value="Load html" />
+    <div id="AjaxGet" style="border: 3px red dotted;">
+        Get Time using Ajax
+    </div>
+    <input id="jQueryGet" type="button" value="jQuery Get" />
+    <div id="AjaxPost" style="border: 3px red dotted;">
+        Ajax Post
+    </div>
+    <div style="margin-left: 32px;">
+        <a>User:</a><input id="txtUser" type="text" />
+    </div>
+    <div>
+        <a>Password:</a><input id="txtPassword" type="text" />
+    </div>
+    <input id="jQueryPost" type="button" value="jQuery Post" />
+    <form id="form1" runat="server">
+    
+    <div id="msg">
+    </div>
+    <div>
+        <input id="btnLogin" type="button" value="Login" /></div>
+    </form>
+    <input id="jQueryAjax" type="button" value="jQuery Ajax" />
+</body>
+</html>

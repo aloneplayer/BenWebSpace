@@ -1,0 +1,91 @@
+﻿body
+{
+    color: #444444;
+    font: 12px/1.6em Verdana,Helvetica,Arial,sans-serif;
+}
+
+.Picrollbody
+{
+    border-bottom: #a1d2fd 1px solid;
+    position: relative;
+    border-left: #a1d2fd 1px solid;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    border-top: #a1d2fd 1px solid;
+    border-right: #a1d2fd 1px solid;
+    padding-top: 10px;
+}
+.Picrollbody .leftButton
+{
+    position: absolute;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 11px;
+    padding-right: 5px;
+    background: url(./images/leftbutton.gif) #fff no-repeat 5px 10px;
+    float: left;
+    height: 114px;
+    top: 0px;
+    cursor: pointer;
+    padding-top: 10px;
+    left: 0px;
+}
+.Picrollbody .rightButton
+{
+    position: absolute;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 11px;
+    padding-right: 5px;
+    background: url(./images/rightbutton.gif) #fff no-repeat 5px 10px;
+    float: right;
+    height: 114px;
+    top: 0px;
+    cursor: pointer;
+    right: 0px;
+    padding-top: 10px;
+}
+.Picrollbody .PicrollCont
+{
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.Picrollbody .box
+{
+    text-align: center;
+    width: 152px;
+    float: left;
+}
+.Picrollbody .box IMG
+{
+    border-bottom: #add2fc 1px solid;
+    border-left: #add2fc 1px solid;
+    padding-bottom: 3px;
+    margin: 0px auto;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: block;
+    background: #fff;
+    border-top: #add2fc 1px solid;
+    border-right: #add2fc 1px solid;
+    padding-top: 3px;
+}
+.Picrollbody .box A:hover IMG
+{
+    border-bottom: #5385cc 1px solid;
+    border-left: #5385cc 1px solid;
+    border-top: #5385cc 1px solid;
+    border-right: #5385cc 1px solid;
+}
+.Picrollbody .box P
+{
+    line-height: 20px;
+    margin: 6px auto 0px;
+    width: 152px;
+    height: 20px;
+    overflow: hidden;
+}

@@ -1,0 +1,35 @@
+﻿/*CSS Styling to Make Labels Display on Top of Their Associated Fields*/
+div.hover-wrap
+{
+    position: relative;
+    display: inline;
+}
+
+div.hover-wrap input.invalid
+{
+    border: 2px solid red;
+}
+div.hover-wrap ul.errors
+{
+    display: none;
+}
+div.hover-wrap label.hover
+{
+    position: absolute;
+    top: -0.7em;
+    left: 5px;
+    color: #666;
+}
+ul.errors
+{
+    list-style: none;
+    background: #FFCECE;
+    padding: 3px;
+    margin: 3px 0 3px 70px;
+    font-size: 0.9em;
+    width: 165px;
+}
+label span.required
+{
+    color: red;
+}

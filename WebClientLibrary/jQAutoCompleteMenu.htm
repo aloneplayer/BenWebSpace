@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Load Page Dynamically inside a jQuery UI Dialog</title>
+    <link rel="Stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js">
+    </script>
+    <script type="text/javascript">
+        $(function ()
+        {
+            var names =
+                ["james", "jake", "jaffer", "mary",
+                 "maddy", "aaron", "annie", "keith"];
+            $("#tags").autocomplete({
+                source: names
+            });
+        });
+    </script>
+    <style type="text/css">
+        .ui-autocomplete.ui-menu
+        {
+            opacity: 0.4;
+            filter: alpha(opacity=40); /* for mozilla */
+        }
+    </style>
+</head>
+<body>
+    <div class="ui-widget">
+        <label for="tags">
+            Names:
+        </label>
+        <input id="tags" />
+    </div>
+</body>
+</html>

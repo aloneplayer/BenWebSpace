@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Timer</title>
+    <script src="jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+           var g_Timer;
+           var g_Seconds = 0;
+           $(function ()
+           {
+               $('#Button_Timeout').click(function ()
+               {
+                   g_Timer= setTimeout(showTime, 1000);
+               });
+
+               $('#Button_Stop').click(function ()
+               {
+                   clearTimeout(g_Timer);
+               });
+
+               //Show Date()
+               $('#Button_StartTimer').click(function ()
+               {
+                   window.setInterval(function()
+                   {
+                       $("#display").append("<div>" + new Date() + "</div>");
+                   }, 1000);
+               });
+           });
+
+
+           function showTime()
+           {
+                $("#display").append("<div>"+new Date()+"</div>");
+               g_Seconds++;
+           }
+     
+           //
+    </script>
+</head>
+<body>
+    <input id="Button_Timeout" type="button" value="Time out" />
+    <input id="Button_Stop" type="button" value="Stop Timer" />
+    <br />
+    <input id="Button_StartTimer" type="button" value="Start Timer" />
+    <br />
+    <div id="display">
+    </div>
+</body>
+</html>

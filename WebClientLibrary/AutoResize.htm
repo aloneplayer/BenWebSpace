@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JavaScript : Auto Resize</title>
+    <script src="jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function ()
+        {
+            //bind event handler
+            $(window).load(function ()
+            {
+                resizeRock();
+            });
+
+            $(window).resize(function ()
+            {
+                resizeRock();
+                //$('#log').append('<div>Handler for .resize() called.</div>');
+
+            });
+        });
+
+        function resizeRock()
+        {
+            //$("#rockImg").style.height = (document.body.clientHeight - 100) * 0.9;
+            alert($(window).height() + "  " + $(document).height());
+            $("#rockImg").height(($(document).height() - 100) * 0.9);
+        }
+
+    </script>
+</head>
+<body id="body">
+    <div style="margin-top: 100px; text-align: center">
+        <img id="rockImg" src="images/rock.png" alt="iRock" style="cursor: pointer" />
+    </div>
+    <div id="log">
+    </div>
+</body>
+</html>

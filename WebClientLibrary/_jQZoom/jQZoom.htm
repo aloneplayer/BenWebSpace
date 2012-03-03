@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Zoom</title>
+    <link href="jqzoom.css" rel="stylesheet" type="text/css" />
+    <script src="../jQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="jquery.jqzoom1.0.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function ()
+        {
+            var options = {
+                zoomWidth: 200,   //default : 200
+                zoomHeight: 200,  //default : 200
+                xOffset: 0,      //default : 10
+                yOffset: 0,     //default : 0
+                position: "right",  //default : right
+                title: false
+            };
+
+            $(".target").jqzoom(options);
+        });
+    </script>
+</head>
+<body>
+    <a href="kawasakigreen.jpg" class="target" style="" title="摩托车">
+        <img src="kawasakigreen_small.jpg" title="看清楚" style="border: 1px solid #666;" />
+    </a>
+    <hr />
+    <a href="http://www.mind-projects.it/jqzoom_v10">jQZoom</a>
+</body>
+</html>

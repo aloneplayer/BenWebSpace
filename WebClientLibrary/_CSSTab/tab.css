@@ -1,0 +1,87 @@
+﻿body
+{
+    background: none repeat scroll 0 0 #5C87B2; /*color: #5C87B2;*/
+    color: #5C87B2;
+    font-family: Verdana,Helvetica,Sans-Serif;
+    font-size: 0.7em;
+    margin: 0 0 20px;
+    padding: 0;
+}
+#div-tab-content
+{
+    background: url("images/bg-main-corner-sprite.png") no-repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    margin-bottom: 30px;
+    padding: 30px 30px 15px;
+    position: relative;
+    width: 890px;
+}
+
+#div-tab-content-bottom-shadow
+{
+    /*-950px 用图片的右半部份*/
+    background: url("images/bg-main-corner-sprite.png") no-repeat scroll -950px bottom #FFFFFF;
+    bottom: 0;
+    clear: both;
+    font-size: 0.9em;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    width: 950px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#tabHeader
+{
+    padding: 0;
+    position: relative;
+    margin: 0 0 0 15px;
+    text-align: right;
+}
+ul#tabHeader li
+{
+    display: block;
+    list-style: none;
+    background: #e8eef4 url(images/bg-nav-corner-sprite.png) no-repeat 0 -150px;
+    float: left;
+    margin: 0 2px 0 0;
+}
+ul#tabHeader li a
+{
+    padding: 15px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #034af3;
+    display: block;
+    background: transparent url(images/bg-nav-corner-sprite.png) no-repeat right -150px;
+}
+/*
+ul#tabHeader li a
+{
+    padding: 15px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #034af3;
+    background: transparent url(images/bg-nav-corner-sprite.png) no-repeat right -150px;
+    display: block;
+}
+ul#tabHeader li a:hover
+{
+    text-decoration: none;
+    color: #000;
+}
+ul#tabHeader li a:active
+{
+    text-decoration: none;
+    color: #009933;
+}
+ul#tabHeader li.selected
+{
+    background: #fff url(images/bg-nav-corner-sprite.png) no-repeat 0 -150px;
+}
+ul#tabHeader li.selected a
+{
+    color: #000;
+}
+*/

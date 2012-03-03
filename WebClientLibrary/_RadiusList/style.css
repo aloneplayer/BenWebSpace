@@ -1,0 +1,1244 @@
+
+.center{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*targetting all links inside the summary container*/
+body#my_home div#my_summary a{
+	color: #333;
+}
+
+div#home_content div.column-bottom.round {
+/*	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+*/	
+	border-top-style: none;
+
+}
+
+div#home_content h4.column-head.round {
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	/*-webkit-border-radius: 5px;*/
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	/*border: 1px solid #999;*/
+	border-top: 1px solid #495151;
+	border-right: 1px solid #495151;
+	border-left: 1px solid #495151;
+	/*padding: 10px;*/
+}
+
+div#home_content div#my_summary{
+	background:#000000;
+	padding-bottom: 15px;
+	color: #fffeff;
+}
+
+div#home_content div#my_summary div#idol_logo{
+	text-align: center;
+}
+
+div#idol_logo img{
+	width: 220px;
+}
+
+div#home_content div#my_summary p.subtitle{
+	color: #fffeff;
+	color: #5e5e5e;
+	margin-top: 0;
+}
+
+
+div#home_content div#my_summary h2 span.idol_name{
+	color: #ff2a90;
+	/*margin-top: 10px;*/
+	font-size: 1.5em;
+}
+
+div#home_content div#my_summary h2{
+	color: #ff2a90;
+	font-size: 1.2em;
+	margin-bottom: 0;
+	line-height: 1.5em;
+	
+}
+
+div#home_content div#my_summary h3{
+	color: #5e5e5e;
+	margin-top: 10px;
+	font-size: 1.1em;
+}
+
+div#home_content div#my_summary h4{
+	color: #eaeaea;
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+div#home_content div#my_summary a{
+	font-size: 1em;
+	color: #0097fa;
+}
+div#home_content div#my_summary h4 a{
+	color: #ff2a90;
+	text-decoration: none;
+	border-bottom: 1px dotted pink;
+	
+}
+
+
+div#home_content div#my_summary p{
+	color: #d5d5d5;
+	margin-top: 10px;
+	font-size: 1em;
+}
+
+div#home_content div#my_summary span.pink{
+	background: none;
+	color: #ff2a90;
+
+}
+
+
+div#onTrack,
+div#slack,
+div#my_summary{
+	min-height: 70px;
+	padding-top: 15px;
+	/*padding-bottom: 35px;*/
+	/*overflow: hidden;*/
+}
+
+.column-head{
+	color: #fff;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*background-color: #495151;*/
+	background-color: #000;
+}
+
+.column-bottom{
+	padding-left: 10px;
+	background-color: #fffeff;
+}
+
+div.home-columns a.task-link{
+/*	color: #666666;*/
+	color: #000;
+	font-weight: bold;
+}
+
+div.home-columns ul.column-bottom h4{
+	color: #DFB946;
+	color: #000;
+}
+
+
+/*----------------------------------------------------*/
+/*Manage Page*/
+/*----------------------------------------------------*/
+
+/*Manage Tasks page - Tasks table*/
+
+table#manage_tasks th{
+	/*font-size: 1.2em;
+	text-decoration: underline;*/	
+}
+
+table#manage_tasks td{
+	border: 0;
+	/*background-color: #fdff00;*/
+}
+
+table#manage_tasks{
+	border-collapse: collapse; /*needed to remove the cpacing between the table cells in IE and to add the borders around tr on all browsers*/
+}
+
+table#manage_tasks tr{
+	/*border-bottom: 1px dotted #000;*/
+	margin-bottom:5px;
+}
+
+table#manage_tasks tr.table_header{
+	/*background-color: #0ff;*/
+	/*background-color: #9cc4e4;*/
+}
+
+table#manage_tasks td.actions{
+	/*background-color: #fff;*/
+	/*background-color: #bde5f0;*/
+}
+
+
+tr.even td {
+	background:none;
+}/*overriding compresses.css*/
+
+
+table#manage_tasks tr.odd{
+	/*background: #9cc4e4;*/
+}
+
+table#manage_tasks tr.even{
+	/*background-color: #ecece0;*/
+
+}
+	
+div#show_content,
+div#add_task_content,
+div#edit_task_content,
+div#inside
+{
+	border: 3px solid #0097fa;
+	
+}
+
+div#show_content,
+div#manage_content,
+div#home_content,
+div#add_task_content,
+div#edit_task_content
+{
+/*	background: #1764ac url(/images/temp/my_bg_430.png) repeat-x;	
+	background: #fefa43 url(/images/temp/my_bg_yw4_430.png) repeat-x;
+	
+	background: #48a7f4 url(/images/temp/my_bg_bw_300.png) repeat-x;
+*/
+}
+
+div#account_content,
+div#password_content,
+div#notifications_content
+{
+/*background: #75d6fc url(/images/temp/my_bg_bw_285.png) repeat-x;*/	
+margin-top: 0;
+padding-top: 0;
+
+}
+
+div#manage_content{
+	/*padding-bottom: 10px;*/	
+	margin-bottom: 10px;
+}
+
+#manage_content a{
+	color: #1500ff;
+	text-decoration: none;
+}
+
+/*Hover events*/
+
+table#manage_tasks tr.table_header:hover{
+	background: #bde5f0; /*table header hover color - same as content background color*/	
+	background:none;
+}
+
+table#manage_tasks tr:hover .actions {
+	visibility:visible;
+	text-decoration: none;
+	font-style: italic;
+	/*background-color: #fff;*/
+}
+
+
+
+table#manage_tasks tr.even:hover,
+table#manage_tasks tr.odd:hover{
+		/*background-color: #f00;*/
+	/*background:#E5ECF9;*/
+	/*background: #9cc4e4;*/
+	/*background: #b7dfb9;*/
+
+	background-color: #eaeaea;
+}
+
+
+#manage_content a:hover{
+	text-decoration: underline;
+}
+
+/*---*/
+
+
+.in_place_editor_field{
+	color: #1500ff;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+
+
+
+body {
+	margin: 0 0 1.5em;
+	font-size:75%;
+	color:#222;
+	/*background:#fff;*/
+	/*font-family:Helvetica, Arial, sans-serif;*/ 
+}
+
+
+html,body {
+   margin:0;
+   padding:0;
+   height:100%;
+   /*height:700px;*/
+   
+}
+
+.container{
+	/*min-height: 40%;*/
+	position: relative;
+}
+
+
+div.clearing{
+	clear: both;
+}
+
+div.add-task{
+	/*margin-bottom: 15px;*/
+	margin-bottom: 5px;
+	margin-left: -20px;
+	padding-top: 15px;
+}
+
+.wide{
+	width:990px;margin:0 auto;
+}
+
+ul#tab_nav li{
+	display: inline;
+}
+
+	
+
+
+#tasks_column{
+	/*padding-top: 0;*/
+}
+
+a
+{
+  outline: none; /*removing the dotted border around clicked links*/
+}
+
+.page-heading h1{
+	font-size: 1.7em;	
+}
+
+#notice{
+	margin-bottom: 10px;
+}
+.error, .notice, .success{ /*overriding the default flash message css*/
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left:0;
+	padding-right: 0;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	border:0px solid #ddd;
+	border: 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+
+
+/*user-nav*/
+
+ul.navigation li{
+	display: inline;
+}
+
+div#user-nav ul li{
+	margin:0 0 0 3px;
+	padding-top: 6px;
+	/*padding-left: 4px;
+	padding-right: 4px;*/
+	/*padding-bottom: 6px;*/
+	/*display:inline;*/
+}
+
+div#user-nav ul{
+	margin-bottom: 0;
+}
+
+div#user-nav{
+	margin-top: 25px;
+
+	
+}
+
+
+/*account-links*/
+
+div.account-links ul{
+	margin-bottom: 0;
+}
+
+div.account-links ul li{
+	margin:0 0 0 3px;
+	padding-top: 6px;
+	/*padding-bottom: 8px;*/
+	padding-left: 4px;
+	padding-right: 4px;
+	display:inline;
+}
+
+
+
+/*div.content,*/div#content-container-2 {	
+
+	/*padding-top: 15px;*/
+	padding-bottom: 50px;
+	/*padding-top: 10px;*/
+	/*padding-bottom:45px;*/ /*same as the size of the footer*/
+	/*padding-bottom:35px;*/ /*same as the size of the footer*/
+	/*margin-bottom: 40px;*/
+			/*background:  url(/images/temp/my_bg_800.png) repeat-x;*/
+			/*min-height:500px;*/
+
+}
+
+body#invite_friends{
+	background: none;
+}
+
+body#invite_friends div#counter{
+	background-color: #000;
+	border: 2px solid #eaeaea;
+	padding: 5px;
+}
+
+body#invite_friends div#counter div.span-2{
+	width: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+
+body#invite_friends div#counter.span-7{
+	width: 320px;
+	margin: 0;
+}
+
+body#invite_friends div#counter_wrapper.span-7{
+	width: 330px;
+	background-color: #eaeaea;
+	padding: 10px;
+}
+
+/*body#invite_friends div#share_content h2#share_title{
+	color: #0097f7;
+}*/
+
+body#invite_friends div#sidebar div#about_invite{
+	/*margin-left: 10px;*/	
+	margin-top: 10px;
+	background-color: #fffeff;
+	padding: 10px;
+	width: 330px;
+
+}
+
+body#invite_friends div#sidebar div#about_invite p{
+	font-size:1.2em;
+	margin-bottom: 10px;
+}
+
+
+body#invite_friends div#sidebar div#about_invite h2{
+	color: #ff2c8e;
+	font-size: 2em;
+
+}
+
+body#invite_friends div#sidebar div#about_invite ol{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+
+body#invite_friends div#sidebar div#about_invite ol li span{
+	font-size:2em;
+	color: #ff9232;
+}
+
+
+
+
+body#invite_friends div#counter div.title{
+	color: #d5d5d5;
+	font-size: 1em;	
+	letter-spacing: 0.05em;
+}
+
+body#invite_friends div#counter div.digit{
+	color: #fffeff;
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+body#invite_friends div#counter div{
+	text-align: center;
+}
+
+body#invite_friends div#counter div#invites_sent,
+body#invite_friends div#counter div#signups,
+body#invite_friends div#counter div#points
+{
+	border: 1px solid #eaeaea;
+}
+
+body#invite_friends div#counter div#invites_sent{
+	/*background-color: #ff2c8e;*/
+	margin-right: 5px;
+}
+
+body#invite_friends div#counter div#signups{
+	/*background-color: #008e29;*/
+	margin-right: 5px;
+}
+
+body#invite_friends div#counter div#signups div.digit{
+	color: #8db100;
+}
+
+body#invite_friends div#counter div#points div.digit{
+	color: #ff2c8e;
+}
+
+
+body#invite_friends div#counter div#points{
+	/*background-color: #0097f7;*/
+}
+
+body#invite_friends div#sidebar{
+	/*background-color: #eaeaea;*/
+	margin-left: 20px;
+}
+
+body#invite_friends div#sidebar div#share_url{
+	background-color: #ff9232;
+	color: #fffeff;
+	padding: 5px;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+
+body#invite_friends textarea{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.03em;
+}
+
+body#invite_friends textarea#recipient_list{
+	font-size: 1.2em;
+	color: #c0c0c0;
+}
+
+body#invite_friends div#invite_form{
+	background-color: #fffeff;
+	padding: 15px 0 20px 25px;
+	border: 2px solid #d5d5d5;
+}
+
+body#invite_friends div#invite_form h1{
+	margin-bottom: 10px;
+}
+
+body#invite_friends div#invite_form h2.salutation{
+	font-size: 2.5em;
+	color: #c0c0c0;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+body#invite_friends div#share_content{
+	padding-top: 0;
+}
+
+body#invite_friends div#share_content h2{
+	padding-top: 0;
+	margin-bottom: 20px;
+	color: #000;
+}
+	
+body#invite_friends div#share_content h3{
+	padding-top: 0;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	color: #000;
+}
+
+body#invite_friends div#import_contacts{
+	background-color: #fffeff;
+	padding:5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+body#invite_friends div#extra{
+	/*background-color: #eaeaea;*/
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+body#invite_friends div#invite_form h4.tip{
+	font-size: 1em;
+	color: #919191;
+}
+
+body#invite_friends div#invite_form h3{
+	margin-left: -25px;
+}
+
+
+body#invite_friends div#invite_form p.tip{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*body#invite_friends div#invite_form a#toggle_personal_message{
+	background-color: #0097f7;
+	color: #fffeff;
+	text-decoration: none;
+	padding: 5px;
+}
+
+body#invite_friends div#invite_form a#toggle_personal_message:hover{
+	background-color: #0097f7;
+	color: #fffeff;
+	text-decoration: underline;
+	padding: 3px;
+}*/
+
+
+body#invite_friends div#invite_form a{
+	color: #0097f7;
+	text-decoration: underline;
+}
+
+body#invite_friends div#invite_form a:hover{
+	color: #0097f7;
+	text-decoration: none;
+}
+
+body#invite_friends div#invite_form a#show_email_preview{
+	background-color: #0097f7;
+	text-decoration: none;
+	color: #fffeff;
+	padding: 5px;
+}
+
+body#invite_friends div#invite_form a#show_email_preview:hover{
+	background-color: #0097f7;
+	text-decoration: underline;
+	color: #fffeff;
+}
+
+
+body#invite_friends div#import_contacts img{
+	width: 250px;
+	margin-top:10px;
+	margin-bottom:10px;
+	/*border: 1px solid #ff2c8e;*/
+	/*padding: 5px;*/
+}
+
+body#invite_friends div#content-container-2{
+	padding-bottom: 0;
+}
+
+
+body#invite_friends textarea{
+	height: 120px;
+}
+
+body#my_tasks{
+	/*background: #c0c0c0 url(/images/rootein_bg.jpg) repeat-x left top;*/
+}
+
+body#my_tasks div#content-container-2{
+	padding-bottom: 10px;
+}
+
+
+
+body#error div#content-container-2{
+	padding-bottom: 0;
+}
+
+body#error div#about_links{
+	padding-top: 10px;
+}
+
+body#error div#copyright{
+	padding-bottom: 10px;
+}
+
+div#content-container-2 div.content{
+	/*background-color: #eaeaea;*/
+	/*-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;*/
+
+	/*-moz-border-radius-topright:5px;	
+	-webkit-border-top-right-radius: 5px;
+	
+	-moz-border-radius-bottomleft:5px;	
+	-webkit-border-bottom-left-radius: 5px;
+	
+	-moz-border-radius-bottomright:5px;	
+	-webkit-border-bottom-right-radius: 5px;*/
+
+
+
+}
+
+
+div#content-container-2 div#empty_content.content{
+	background: none;
+	padding-top: 0;
+}
+
+#submit_div {
+	color:#514721;
+	border-color:#FFD324;
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+	}
+
+
+/*For Tasks Listing*/
+
+
+div#taskslist-head{
+	padding-bottom: 10px;	
+	margin-bottom: 5px;
+	
+
+}
+
+div.task-row{
+	margin-bottom: 1em;
+}
+
+ul.tasks{
+	margin: 0;	
+}
+
+ul.tasks li{
+	list-style-type: none;
+	color: #336699;
+	line-height:0.8em;
+	/*margin-bottom:1.5em;*/
+	margin-bottom:0.5em;
+	letter-spacing:0.05em;
+	margin-left: 0;
+	padding-bottom: 0;
+}
+
+li.task{
+	/*background:#E5ECF9;*/
+	/*border-top: 1px dashed #666;
+	border-bottom: 1px dashed #666;*/
+	/*border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;*/
+}
+
+li.task:hover{
+	/*background:#E5ECF9;*/
+	/*border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;*/
+}
+
+li.task:hover a.task-link{
+	color: #4096ee;
+}
+
+div#active_arrow{
+	margin-left: -5px;	
+	margin-top: 3px;
+}
+
+.move{
+	visibility: hidden;
+	/*margin-left: 15px;*/
+	margin-left: 0;/*fixing the long tasknames overlap*/
+}
+
+li.task:hover .move{
+	visibility:visible;
+}
+
+li.task:hover div.actions {
+	visibility:visible;
+	text-decoration: none;
+	/*font-style: italic;*/
+	/*background-color: #fff;*/
+}
+
+ul#taskslist div.actions{
+	margin-left: 6px;
+	/*visibility:visible;*/
+	margin-top: -8px;
+	clear: left;
+}
+
+ul#taskslist div.actions a{
+	color: #797979;
+}
+
+ul#taskslist div.actions a.red{
+	color: #ff1f19;
+	background: none;
+}
+
+li.odd{
+	/*background-color: #ccc;*/
+}
+
+li.even{
+	
+}
+
+div.tasks-list div.task-name{
+	overflow: hidden;
+}
+
+body#my_tasks div.tasks-list div.task-name.span-4{
+	width: 170px; /*fixing the long tasknames overlap*/
+}
+
+ul#taskslist{
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+div.tasks-list ul#taskslist{
+	margin: 0;
+	/*margin-top: 20px;*/
+}
+
+div.tasks-list hr{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+a.task-link{
+	/*line-height:0.9em;*/
+	line-height:0em;
+	/*margin-bottom:1em;*/
+	text-decoration: none;
+	/*color: #336699;*/
+	/*color: #DFB946;*/
+	color: #000;
+}
+
+h2#task_title{
+	/*padding-top: 0.2em;*/
+	/*padding-bottom: 0.2em;*/
+	/*margin-top: -15px;*/
+	margin-bottom: 2px;
+}
+
+h2#task_title {
+	font-size:1.5em;
+	/*margin-top: 0.5em;*/
+	/*margin-bottom:0.5em;*/
+	margin-bottom:0;
+}
+
+.handle{
+	font-size: 0.6em;
+	cursor: default;
+	color: #777;
+}
+
+.badge{
+	border:1px solid #CACACA;
+	border: 1px solid #e6e6e6;
+	color:#FFFFFF;
+	text-align:center;
+	display:block;
+	width:20px;
+	padding: 0.2em 0.5em 0.1em;
+	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;	
+}
+
+.badge a.task-link{
+	color:#FFFFFF;
+	display:block;
+	width: 100%;
+}
+
+.badge a.task-link, .badge{
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 0.8em;
+}
+
+.big_badge{
+	width:110px;
+	font-size: 6.2em;
+	margin-top:5px;
+	margin-bottom: 20px;
+}
+
+div#manage_content .badge,
+div#home_content .badge{
+	cursor: pointer;
+}
+
+div#active_tasks_badge.badge,
+div#inactive_tasks_badge.badge{
+	/*cursor: default;*/	
+}
+
+div#active_tasks_badge{
+	background-color: #2b89c9;	
+}
+
+div#manage_content .badge.inactive_badge
+{
+	cursor: default;
+	
+}
+
+
+div#manage_content a.task-link{
+text-decoration: none;}
+
+
+
+/*big-badge settings*/
+.big-badge{
+	border: 1px solid #e6e6e6;
+	color:#FFFFFF;
+	/*padding:0.1em 0.5em;*/
+	text-align:center;
+	/*display:block;*/
+	/*margin-bottom: 10px;*/
+	margin-bottom: 0px;
+	/*width:50px;
+	height: 50px;*/
+	
+	padding-top:5px;
+	padding-bottom: 5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+
+}
+
+.big-badge a.task-link{
+	color:#FFFFFF;
+}
+
+.big-badge a.task-link, .big-badge{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.big-badge .days{
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+.task-name{
+	color: #336699;	
+}
+
+.active-inactive{
+	border-style: solid;
+	border-color: #ff7a00;
+}
+
+input.big-check{
+	height: 40px;
+	width: 40px;
+}
+
+
+/*footer*/
+div#footer-wide,div#footer{
+	color: #fff;
+	/*color:#000;*/
+	/*height:45px;*/
+	background-color: #000;
+}	
+
+	
+div#footer-wide{
+	/*padding-top: 20px;
+	margin-top: 20px;*/
+	/*background-color: #000;*/
+	width: 100%;
+	/*height: 150px;*/
+	float: left;
+	
+}
+body#rootein_update div#footer-wide{
+	margin-top: 40px;
+}
+
+body#rootein_update div#footer-wide div#footer{
+	margin: 0 auto;
+	width: 960px;
+}
+
+body#rootein_update h1{
+	font-size: 2.2em;
+}
+
+body#rootein_update h2{
+	font-size: 1.5em;
+}
+
+body#rootein_update h3{
+	font-size: 1.2em;
+}
+
+body#rootein_update p{
+	font-size: 0.9em;
+	color: #5e5e5e;
+}
+
+body#forgot_password div#footer-wide{
+	/*margin-top: 90px;*/	
+}
+
+div#footer-wide h3{
+	color: #5e5e5e;
+}
+
+div#footer a{
+	color: #fff;	
+	text-decoration: none;
+}
+
+div#footer a:hover{
+	
+	text-decoration: underline;
+}
+
+div#footer #social_links > ul li a{
+	color: #C0ECFC;
+	/*text-decoration: none;*/
+	font-size: 15px;
+}
+
+div#footer #about_links ul li{
+	display: inline;
+}
+
+
+/*----------------------------------------------------*/
+/*understand_section*/
+/*----------------------------------------------------*/
+
+/*body#my_home*/ div#understand.content{
+	background-color: #eaeaea;
+		background: #48a7f4 url(/images/temp/my_bg_bw_270.png) repeat-x;
+
+	
+
+	padding-top: 20px;
+	margin-top: 0px;
+	/*background: none;*/
+	/*margin-top: 0px;*/
+	/*padding-top: 0px;*/
+}
+
+
+
+div#understand .highlight{
+	background: none;
+	font-weight: bold;
+}
+
+div#understand .highlight.red{
+	color: #c03c3e;
+}
+
+div#understand .highlight.orange{
+	color: #ff7a00;
+}
+
+div#understand .highlight.green{
+	color: #6bb600;
+}
+
+
+div#understand p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+div#understand .span-1{
+margin-right: 25px;	
+}
+
+div#understand{
+	/*background-color: #e6e6e6;*/
+	padding-bottom: 10px;
+}
+
+div#understand ul#badges{
+	list-style-type:none
+}
+/*Narrow*/
+	
+#branding-narrow{
+	border-bottom: 7px solid #c03c3e;
+	border-bottom: 7px solid #685fff;
+	background-color: #000;
+}
+
+.bottom-10{
+	margin-bottom: 10px;	
+}
+
+.bottom-15{
+	margin-bottom: 15px;	
+}
+
+.bottom-20{
+	margin-bottom: 20px;	
+}
+
+.top-10{
+	margin-top: 10px;	
+}
+
+.top-15{
+	margin-top: 15px;	
+}
+
+.top-20{
+	margin-top: 20px;	
+}
+
+.round{
+	/*background-color: #ff1f19;*/
+	/*-moz-border-radius: 5px;*/
+	/*-webkit-border-radius: 5px;*/
+	/*-moz-border-radius: 5px;*/
+	border: 1px solid #999;
+	/*padding: 10px;*/
+}
+
+ul#taskslist.round{
+	/*-moz-border-radius-topleft:0px;
+	-moz-border-radius-topright:0px;*/
+	/*-moz-border-radius: 5px;*/
+	/*-webkit-border-radius: 5px;*/
+	/*border: 1px solid #999;*/
+	
+
+}
+
+.tl{
+	-moz-border-radius-topleft:5px;	
+	-webkit-border-top-left-radius: 5px;
+}
+
+.tr{
+	-moz-border-radius-topright:5px;	
+	-webkit-border-top-right-radius: 5px;
+}
+
+.bl{
+	-moz-border-radius-bottomleft:5px;	
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+.br{
+	-moz-border-radius-bottomright:5px;	
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+body#error{
+	background:#fff url(/images/temp/home_bg.gif) repeat-x;
+}
+
+body#error div#content-container-2{
+	height: 300px;
+}
+
+body#error div#wrapper{
+	margin-top: 50px;
+}
+
+body#error div#wrapper a{
+	font-size: 1.2em;
+	color: #fffeff;
+}
+
+body#error p.go_back{
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	
+}
+
+div#bad_rootein{
+	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+body#error div#bad_rootein h3{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+body#error div#bad_rootein a{
+	/*font-size: 1.2em;*/
+	font-size: 1em;
+	color: #1134f8;
+}
+
+
+
+
+div#home_content canvas.jbgCanvas{
+	z-index: -4;
+}
+
+div#home_content div.column-bottom{
+	z-index: 4;
+	margin-top: -5px;
+}

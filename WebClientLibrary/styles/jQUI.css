@@ -1,0 +1,64 @@
+﻿body
+{
+    margin: 0;
+}
+
+#canvas
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#startBar
+{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: #000;
+}
+
+#toolBar
+{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    background: #000;
+}
+
+
+
+#bar1
+{
+    position: absolute;
+    left: 0%;
+    width: 33.3%;
+    height: 30px;
+    background: #383838;
+}
+#bar2
+{
+    position: absolute;
+    left: 33.3%;
+    width: 33.3%;
+    height: 30px;
+    background: #000;
+}
+#bar3
+{
+    position: absolute;
+    left: 66.6%;
+    width: 33.3%;
+    height: 30px;
+    background: #383838;
+}
+
+#startMenu
+{
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    height: 30px;
+    background: #383838;
+}

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check Browser</title>
+    <script src="Scripts/jquery-1.4.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function browserIsIE()
+        {
+            return !window.opener && navigator.userAgent.toLowerCase().indexOf("msie") != -1;
+        }
+
+        function showUserAgent()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            alert(ua);
+        }
+        
+        function isIE()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            return ua.match(/msie ([\d.]+)/) != null;
+        }
+
+        function isIE7Plus()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            s = ua.match(/msie ([\d.]+)/);
+            if (s && s[1])
+            {
+                var version = parseFloat(s[1]);
+                return version >= 7;
+            }
+            return false;
+        }
+
+        function isFirefox()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            return ua.match(/firefox\/([\d.]+)/) != null;
+        }
+
+        function isFirefox3x()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            s = ua.match(/firefox\/([\d.]+)/);
+            if (s && s[1])
+            {
+                var version = parseFloat(s[1]);
+                return version >= 3;
+            }
+            return false;
+        }
+
+        function isFirefox2x()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            s = ua.match(/firefox\/([\d.]+)/)
+            if (s && s[1])
+            {
+                var version = parseFloat(s[1]);
+                return version >= 2 && version < 3;
+            }
+            return false;
+        }
+
+
+        $(function ()
+        {
+            showUserAgent();
+            //alert(browserIsIE());
+        });
+    
+    </script>
+</head>
+<body>
+</body>
+</html>
