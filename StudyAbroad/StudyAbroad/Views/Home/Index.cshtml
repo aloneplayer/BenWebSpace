@@ -1,8 +1,55 @@
 ﻿@{
     ViewBag.Title = @Resources.UIStrings.HomePageTitle;
 }
-
-<h2>@ViewBag.Message</h2>
-<p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-</p>
+<script src="@Url.Content("~/Scripts/Libs/slides.min.jquery.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Home/Index.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/Css/Slider.css")" rel="stylesheet" type="text/css" />
+<div id="slidesframe">
+    <img src="/Content/Slider/new-ribbon.png" width="112" height="112" alt="New Ribbon"
+        id="ribbon">
+    <div id="slides">
+        <div class="slides_container">
+            <a href="" title="" target="_blank">
+                <img src="/Content/Slider/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+            <a href="" title="" target="_blank">
+                <img src="/Content/Slider/slide-2.jpg" width="570" height="270" alt="Slide 1"></a>
+            <a href="" title="" target="_blank">
+                <img src="/Content/Slider/slide-3.jpg" width="570" height="270" alt="Slide 1"></a>
+            <a href="" title="" target="_blank">
+                <img src="/Content/Slider/slide-4.jpg" width="570" height="270" alt="Slide 1"></a>
+            <a href="" title="" target="_blank">
+                <img src="/Content/Slider/slide-5.jpg" width="570" height="270" alt="Slide 1"></a>
+            <a href="" title="" target="_blank">
+                <img src="/Content/Slider/slide-6.jpg" width="570" height="270" alt="Slide 1"></a>
+        </div>
+        <a href="#" class="prev">
+            <img src="/Content/Slider/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+        <a href="#" class="next">
+            <img src="/Content/Slider/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+    </div>
+    <img src="/Content/Slider/example-frame.png" width="739" height="341" alt="Example Frame"
+        id="frame">
+</div>
+<div id="introduction">
+    <h1>
+        <b>About us:</b> Study Aboard</h1>
+    <h2>
+        How to study aboard</h2>
+    <p>
+        Study abroad takes planning to succeed. The sooner you starting preparing to study
+        abroad, the better your experience will probably be. Start the process by following
+        these steps: Meet with your Study Abroad or Academic Advisor: Each school has different
+        policies for study abroad. Your school may even have different policies for different
+        majors. Meet with your study abroad or academic advisor to discuss your interest
+        in going abroad. Your advisor can help you understand how study abroad fits in with
+        your academic plan Research Study Abroad Program: There are hundreds of study abroad,
+        intern abroad, teach abroad, volunteer abroad and language abroad programs. Choose
+        a program that fits your academic and personal goals for going abroad. See Choosing
+        the Right Program Apply for Study Abroad Programs: Study Abroad Programs fill up
+        quickly. Apply for two or three programs as soon as possible, or at least a few
+        months prior to the application deadline. Review the application carefully. If your
+        school is the program’s sponsor, see your study abroad advisor for specific application
+        information. For all other programs, contact the program administrator directly
+        for application questions and deadline.
+    </p>
+</div>

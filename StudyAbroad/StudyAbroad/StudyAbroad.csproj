@@ -81,8 +81,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Layout.css" />
+    <Content Include="Content\Css\Layout.css" />
     <Content Include="Content\Images\bg.jpg" />
+    <Content Include="Content\Css\Slider.css" />
+    <Content Include="Content\Slider\arrow-next.png" />
+    <Content Include="Content\Slider\arrow-prev.png" />
+    <Content Include="Content\Slider\example-frame.png" />
+    <Content Include="Content\Slider\loading.gif" />
+    <Content Include="Content\Slider\new-ribbon.png" />
+    <Content Include="Content\Slider\pagination.png" />
+    <Content Include="Content\Slider\slide-1.jpg" />
+    <Content Include="Content\Slider\slide-2.jpg" />
+    <Content Include="Content\Slider\slide-3.jpg" />
+    <Content Include="Content\Slider\slide-4.jpg" />
+    <Content Include="Content\Slider\slide-5.jpg" />
+    <Content Include="Content\Slider\slide-6.jpg" />
+    <Content Include="Content\Slider\slide-7.jpg" />
+    <Content Include="Content\Slider\slide.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -111,7 +126,9 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\Home\Index.js" />
     <Content Include="Scripts\Libs\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\Libs\slides.min.jquery.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -119,7 +136,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Style.css" />
+    <Content Include="Content\Css\Style.css" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
