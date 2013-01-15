@@ -1,0 +1,31 @@
+html, body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#wrapper /* CSS Sticky Footer */
+{
+    min-height: 100%;
+}
+
+
+/* main */
+#main
+{
+    overflow: auto;
+    /*  CSS Sticky Footer padding-bottom must equals footer' height*/
+    padding-bottom: 60px;
+}
+
+
+#footer
+{
+    /*CSS Sticky Footer*/
+    margin: -60px auto 0 auto; /* negative value of footer height */
+    height: 60px;
+    clear: both;
+    background: #ccc; /*Just for debugging*/
+}

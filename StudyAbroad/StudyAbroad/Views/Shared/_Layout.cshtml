@@ -1,0 +1,51 @@
+﻿@using Resources;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Layout.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Style.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <span>@UIStrings.LogoCaption</span>
+            </div>
+            <div id="authbox">
+                @if (Request.IsAuthenticated)
+                {
+                    @string.Format(UIStrings.Welcome, this.User.Identity.Name) @:| @Html.ActionLink(UIStrings.Logout, "LogOff", "Account")
+                }
+                else
+                {
+                    @Html.ActionLink(UIStrings.Login, "LogIn", "Account") @:| @Html.ActionLink(UIStrings.Registry, "Registry", "Account")
+                }
+            </div>
+        </div>
+        <div id="menu">
+            <ul id="navlist">
+                <li class="first"><a href="@Url.Content("~")" id="current">Home</a></li>
+                <li><a href="@Url.Content("~/Store/")">Learning In US</a></li>
+                <li><a href="@Url.Content("~/Store/")">Contact</a> </li>
+                <li><a href="@Url.Content("~/StoreManager/")">About</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="content">
+                @RenderBody()
+            </div>
+            <div id="sidebar">
+                <li class="first"><a href="@Url.Content("~")" id="current">Home</a></li>
+                <li><a href="@Url.Content("~/Store/")">Learning In US</a></li>
+                <li><a href="@Url.Content("~/Store/")">Contact</a> </li>
+                <li><a href="@Url.Content("~/StoreManager/")">About</a></li>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <strong>Study Abroad</strong> <span>© 2012</span>
+    </div>
+</body>
+</html>

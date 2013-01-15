@@ -1,0 +1,85 @@
+﻿/* Global properties ======================================================== */
+body
+{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #b4b4b4;
+    background: url(images/bg.jpg) 0 0 repeat-x #fff;
+}
+
+/*Logo style*/
+#logo span
+{
+    color: #6A4C31;
+    font-family: 'Passion One' ,cursive;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+#authbox
+{
+    color: #6A4C31;
+    font-family: 'Passion One' ,cursive;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#authbox a
+{
+    color: #6A4C31;
+}
+
+#authbox a:hover
+{
+    color: #b4b4b4;
+}
+
+/*Menu style*/
+#menu ul
+{
+    margin: 0;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li
+{
+    /*display the menu items inline*/
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#menu a
+{
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 136%;
+    font-weight: bold;
+    color: #610720;
+}
+
+#menu a:hover
+{
+    text-decoration: underline;
+}
+
+#menu .active a
+{
+    color: #FFFFFF;
+}
+
+
+/*Footer style*/
+#footer
+{
+    overflow: hidden;
+    text-align: center;
+    width: 950px;
+}
+#footer p
+{
+}
+
+#footer a
+{
+}
