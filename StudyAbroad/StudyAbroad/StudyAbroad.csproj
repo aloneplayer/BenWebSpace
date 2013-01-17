@@ -72,8 +72,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UIStrings.zh.resx</DependentUpon>
     </Compile>
-    <Compile Include="Attributes\AllowAnonymousAttribute.cs" />
-    <Compile Include="Attributes\LogonAuthorizeAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactMessageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

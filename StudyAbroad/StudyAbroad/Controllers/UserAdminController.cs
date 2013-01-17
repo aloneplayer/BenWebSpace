@@ -16,7 +16,7 @@ namespace StudyAbroad.Controllers
         /// <param name="searchType">Type of the search.</param>
         /// <param name="searchInput">The search input.</param>
         /// <returns></returns>
-        [Authorize(Roles = "Admin")]
+        ////[Authorize(Roles = "Admin")]
         public ActionResult ManageUser(string searchType, string searchInput)
         {
             List<SelectListItem> searchOptionList = new List<SelectListItem>() 
