@@ -2,49 +2,46 @@
     ViewBag.Title = "Edit User";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 @using (Html.BeginForm())
 {
     <!-- The hidden control manages the username -->
     @Html.Hidden("id") 
     <!-- Shows detailed information about member from MembershipUser object -->
     <p>
-        <b>UserName:</b> Model.UserName
+        <b>UserName:</b> @Model.UserName
     </p>
     <p>
-        <b>E-Mail:</b> Model.Email</p>
+        <b>E-Mail:</b> @Model.Email</p>
     <p>
-        <b>Registered:</b> Model.CreationDate.ToLocalTime()</p>
+        <b>Registered:</b> @Model.CreationDate.ToLocalTime()</p>
     <p>
-        <b>Last Login:</b> Model.LastLoginDate.ToLocalTime()</p>
+        <b>Last Login:</b> @Model.LastLoginDate.ToLocalTime()</p>
     <p>
-        <b>Last Activity:</b> Model.LastActivityDate.ToLocalTime()</p>
+        <b>Last Activity:</b> @Model.LastActivityDate.ToLocalTime()</p>
     <p>
-        <b>Online Now:</b> Html.CheckBox("onlineNow", Model.IsOnline, new { disabled = "true"
-        })</p>
+        <b>Online Now:</b> @Html.CheckBox("onlineNow", (bool)Model.IsOnline, new {disabled = "true" })</p>
     <p>
-        <b>Approved:</b> <%= Html.CheckBox("approved", Model.IsApproved)</p>
+        <b>Approved:</b> @Html.CheckBox("approved", (bool)Model.IsApproved)</p>
     <p>
-        <b>Locked Out:</b> <%= Html.CheckBox("lockedOut", Model.IsLockedOut, new { disabled
-        = "true" })</p>
+        <b>Locked Out:</b> @Html.CheckBox("lockedOut", (bool)Model.IsLockedOut, new { disabled = "true" })</p>
     <hr />
     <!-- This portion allows you to actually edit the roles of the user -->
     <h2>
         Edit User Roles</h2>
     <ul>
-        foreach (string role in (string[])ViewData["roles"]){
-        <li>Html.CheckBox("role." + role, Roles.IsUserInRole(Model.UserName, role))
-            <label for="role.<%= role %>">
-                role
-            </label>
-        </li>
+        @foreach (string role in (string[])ViewData["roles"])
+        {
+            <li>@Html.CheckBox("role." + role, (bool)Roles.IsUserInRole(Model.UserName, role))
+                <label for="role.@role">
+                    @role
+                </label>
+            </li>
         }
     </ul>
     <p>
         <button type="submit" id="user-editUser-button">
             Update User</button>
-        <button type="button" onclick="location.href='/User/ManageUser'" style="marginleft: 2em;">
+        <button type="button" onclick="location.href='/UserAdmin/ManageUser'" style="marginleft: 2em;">
             Return</button>
     </p>
-
 }

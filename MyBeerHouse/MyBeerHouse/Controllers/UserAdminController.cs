@@ -17,7 +17,7 @@ namespace MyBeerHouse.Controllers
         /// <param name="searchType">Type of the search.</param>
         /// <param name="searchInput">The search input.</param>
         /// <returns></returns>
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public ActionResult ManageUser(string searchType, string searchInput)
         {
             List<SelectListItem> searchOptionList = new List<SelectListItem>() 
@@ -51,14 +51,13 @@ namespace MyBeerHouse.Controllers
             return View(new { id = id });
         }
 
-
         /// <summary>
         /// Manages the role.
         /// </summary>
         /// <param name="id">The id.</param>
         /// <param name="newRole">The new role.</param>
         /// <returns></returns>
-        [Authorize(Roles = "Admin")]
+        ///[Authorize(Roles = "Admin")]
         public ActionResult ManageRole()
         {
             ViewData["TotalRoles"] = Roles.GetAllRoles().Count();
@@ -66,7 +65,7 @@ namespace MyBeerHouse.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
+        ///[Authorize(Roles = "Admin")]
         [AcceptVerbs("POST")]
         public ActionResult CreateRole(string newRole)
         {
@@ -74,7 +73,7 @@ namespace MyBeerHouse.Controllers
             return RedirectToAction("ManageRole");
         }
 
-        [Authorize(Roles = "Admin")]
+        ////[Authorize(Roles = "Admin")]
         //[Service, HttpPostOnly]
         public ActionResult DeleteRole(string id)
         {
@@ -88,7 +87,7 @@ namespace MyBeerHouse.Controllers
         /// <param name="id">The id.</param>
         /// <param name="approved">The approved.</param>
         /// <returns></returns>
-        [Authorize(Roles = "Admin")]
+        ////[Authorize(Roles = "Admin")]
         public ActionResult EditUser(string id)
         {
             ViewData["roles"] = (String[])Roles.GetAllRoles();
@@ -99,6 +98,7 @@ namespace MyBeerHouse.Controllers
         }
 
         [AcceptVerbs("POST")]
+        ////[Authorize(Roles = "Admin")]
         public ActionResult EditUser(string id, bool approved)
         {
             //Is a list of all the user roles

@@ -2,7 +2,6 @@
     ViewBag.Title = "Manage User";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 @using (Html.BeginForm())
 {
     <p>
@@ -46,31 +45,34 @@
         { 
             <tr>
                 <td>
-                    membershipUser.UserName
+                    @membershipUser.UserName
                 </td>
                 <td>
-                    membershipUser.Email
+                    @membershipUser.Email
                 </td>
                 <td align="center">
-                    membershipUser.CreationDate.ToLocalTime()
+                    @membershipUser.CreationDate.ToLocalTime()
                 </td>
                 <td align="center">
-                    membershipUser.LastActivityDate.ToLocalTime()
+                    @membershipUser.LastActivityDate.ToLocalTime()
                 </td>
                 <td align="center">
-                    Html.CheckBox("","","",membershipUser.IsApproved, new {disabled="true"}) %>
+                    @Html.CheckBox("approved", membershipUser.IsApproved, new { disabled = "true" })
                 </td>
                 <td>
-                    <a href="EditUser?id=<%= membershipUser.UserName %>">
-                        <img border="0" alt="Edit
-User" src="/content/images/EditSymbol.png" title="Modify User" align="middle" /></a>
+                    <a href="EditUser?id=@membershipUser.UserName">
+                        <img border="0" alt="EditUser" src="/content/images/EditSymbol.png" title="Modify User" align="middle" /></a>
                 </td>
                 <td>
-                    <a href="ManageUser?id=<%= membershipUser.UserName %>">
+                    <a class="delete-user-button" href="#" meta:id="@membershipUser.UserName">
                         <img border="0" alt="Delete User" src="/content/images/DeleteSymbol.png" title="Delete User"
                             align="middle" /></a>
                 </td>
             </tr>
         }
     </table>
+}
+@section ScriptContent
+{
+    <script type="text/javascript" src="/content/scripts/manage-users.js"></script>
 }
