@@ -133,6 +133,6 @@
     <value>注册</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>欢迎</value>
+    <value>欢迎,{0}</value>
   </data>
 </root>

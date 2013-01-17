@@ -74,16 +74,31 @@
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserAdminController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ProfileInformation.cs" />
+    <Compile Include="Models\UserInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\StudyAbroad.mdf" />
+    <Content Include="App_Data\StudyAbroad_log.ldf">
+      <DependentUpon>StudyAbroad.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\Box\box_title_bg.gif" />
+    <Content Include="Content\Box\icon.gif" />
+    <Content Include="Content\Css\Box.css" />
+    <Content Include="Content\Css\Panel.css" />
     <Content Include="Content\Css\Layout.css" />
     <Content Include="Content\Images\bg.jpg" />
     <Content Include="Content\Css\Slider.css" />
+    <Content Include="Content\Images\tel.gif" />
+    <Content Include="Content\Panel\icon2.gif" />
+    <Content Include="Content\Panel\panel_bg.gif" />
     <Content Include="Content\Slider\arrow-next.png" />
     <Content Include="Content\Slider\arrow-prev.png" />
     <Content Include="Content\Slider\example-frame.png" />
@@ -150,7 +165,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\Resources\" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +181,21 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>UIStrings.zh.designer.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\ChangePassword.cshtml" />
+    <Content Include="Views\User\ForgotPassword.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\UserProfile.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UserAdmin\EditUser.cshtml" />
+    <Content Include="Views\UserAdmin\ManageRole.cshtml" />
+    <Content Include="Views\UserAdmin\ManageUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Message.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

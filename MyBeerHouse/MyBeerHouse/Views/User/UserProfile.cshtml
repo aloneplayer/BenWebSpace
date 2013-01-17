@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("Message")
+@using (Html.BeginForm())
+{ 
+    <div id="SitePreferences" class="form">
+        <h2 class="title">
+            Site Preferences</h2>
+        <div class="content">
+            <p class="field input">
+                <label for="subscriptionType">
+                    Subscription Type</label><br />
+                @Html.DropDownList("subscriptionType")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="language">
+                    Languages</label><br />
+                @Html.DropDownList("language")
+                <span class="input-message"></span>
+            </p>
+        </div>
+    </div>
+    <div id="PersonalDetails" class="form">
+        <h2 class="title">
+            Personal Details</h2>
+        <div class="content">
+            <p class="field input">
+                <label for="firstName">
+                    First Name</label><br />
+                @Html.TextBox("firstName")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="lastName">
+                    Last Name</label><br />
+                @Html.TextBox("lastName")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="genderType">
+                    Gender</label>
+                <br />
+                @Html.DropDownList("genderType")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="birthDate">
+                    Birth Date</label><br />
+                String.Format(Html.TextBox("birthDate")) <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="occupation">
+                    Occupation</label><br />
+                @Html.DropDownList("occupation")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="website">
+                    Website</label>\
+                <br />
+                @Html.TextBox("website")
+                <span class="input-message"></span>
+            </p>
+        </div>
+    </div>
+    <div id="Address" class="form">
+        <h2 class="title">
+            Address Information</h2>
+        <div class="content">
+            <p class="field input">
+                <label for="street">
+                    Street</label>
+                <br />
+                @Html.TextBox("street")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="city">
+                    City</label><br />
+                @Html.TextBox("city")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="state">
+                    State</label>
+                <br />
+                @Html.TextBox("state")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="zipcode">
+                    Zip / Postal Code:</label><br />
+                @Html.TextBox("zipcode")
+                <span class="input-message"></span>
+            </p>
+            <p class="field input">
+                <label for="country">
+                    Country</label>
+                <br />
+                @Html.DropDownList("country")
+                <span class="input-message"></span>
+            </p>
+        </div>
+    </div>
+    <hr />
+    <p>
+        <button type="submit" id="user-login-button">
+            Submit</button></p>
+}

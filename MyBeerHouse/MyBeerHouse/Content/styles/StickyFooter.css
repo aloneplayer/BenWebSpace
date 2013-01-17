@@ -1,0 +1,27 @@
+﻿html
+{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper
+{
+    min-height: 100%;
+}
+
+#page
+{
+    overflow: auto;
+    /*105=footer's height + footer top border*/
+    padding-bottom: 105px;
+}
+/* must be same height as the footer */
+
+#footer
+{
+    clear: both;
+    position: relative;
+    margin-top: -105px; /* negative value of footer height */
+}
+

@@ -97,7 +97,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registry.
+        ///   Looks up a localized string similar to Join us.
         /// </summary>
         internal static string Registry {
             get {
@@ -106,7 +106,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome.
+        ///   Looks up a localized string similar to Welcome {0}.
         /// </summary>
         internal static string Welcome {
             get {

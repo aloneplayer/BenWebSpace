@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <link href="@Url.Content("~/Content/Css/Layout.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/Css/Style.css")" rel="stylesheet" type="text/css" />
-    <script src="@Url.Content("~/Scripts/Libs/jquery-1.8.3.min.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/Css/Panel.css")" rel="stylesheet" type="text/css" />
+    @RenderSection("HeaderContent", required: false)
 </head>
 <body>
     <div id="wrapper">
@@ -17,11 +18,11 @@
             <div id="authbox">
                 @if (Request.IsAuthenticated)
                 {
-                    @string.Format(UIStrings.Welcome, this.User.Identity.Name) @:| @Html.ActionLink(UIStrings.Logout, "LogOff", "Account")
+                    @string.Format(UIStrings.Welcome, this.User.Identity.Name) @:| @Html.ActionLink(UIStrings.Logout, "Logout", "User")
                 }
                 else
                 {
-                    @Html.ActionLink(UIStrings.Login, "LogIn", "Account") @:| @Html.ActionLink(UIStrings.Registry, "Registry", "Account")
+                    @Html.ActionLink(UIStrings.Login, "LogIn", "User") @:| @Html.ActionLink(UIStrings.Registry, "Register", "User")
                 }
             </div>
         </div>
@@ -38,15 +39,44 @@
                 @RenderBody()
             </div>
             <div id="sidebar">
-                <li class="first"><a href="@Url.Content("~")" id="current">Home</a></li>
-                <li><a href="@Url.Content("~/Store/")">Learning In US</a></li>
-                <li><a href="@Url.Content("~/Store/")">Contact</a> </li>
-                <li><a href="@Url.Content("~/StoreManager/")">About</a></li>
+                @if (IsSectionDefined("SiderBar"))
+                { 
+                    @RenderSection("SideBar");
+                }
+                else
+                {
+                    <div class="panel">
+                        <h2>
+                            <strong>产品</strong>导购</h2>
+                        <div class="panel_content  product">
+                            <ul>
+                                <li><strong>语音业务：</strong><a href="#">普通电话</a> | <a href="#">语音数字中继</a></li>
+                                <li><strong>语音业务：</strong><a href="#">普通电话</a> | <a href="#">语音数字中继</a></li>
+                                <li class="product3"><strong>语音业务：</strong><a href="#">普通电话</a> | <a href="#">语音数字中继</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h2>
+                            <strong>联系</strong>我们</h2>
+                        <div class="panel_content contact">
+                            <a href="#">
+                                <img src="/Content/images/tel.gif" alt="联系我们" width="222" height="112" /></a></div>
+                    </div>
+                }
             </div>
         </div>
     </div>
     <div id="footer">
-        <strong>Study Abroad</strong> <span>© 2012</span>
+        <dl>
+            <dt><a href="#">关于我们</a> || <a href="#">产品目录</a> || <a href="#">联系我们</a> || <a href="#">
+                友情链接</a> || <a href="#">反馈问题</a> || <a href="#">广告合作</a></dt>
+            <dd>
+                Copyright &copy; 2012 - 2013 All Rights Reserved<br />
+                标准之路 版权所有 京ICP备XXXXX号</dd>
+        </dl>
     </div>
+    <script src="@Url.Content("~/Scripts/Libs/jquery-1.8.3.min.js")" type="text/javascript"></script>
+    @RenderSection("ScriptContent", required: false)
 </body>
 </html>

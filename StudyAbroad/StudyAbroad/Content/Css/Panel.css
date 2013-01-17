@@ -1,0 +1,68 @@
+﻿.panel
+{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.panel ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+/*h2 is the panel header*/
+.panel h2
+{
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    padding: 6px 10px 0 10px;
+    background: url(/Content/Panel/panel_bg.gif) 0 0 no-repeat;
+    font-size: 14px;
+    color: #444;
+}
+
+.panel h2 strong
+{
+    color: #f30;
+}
+
+.panel_content
+{
+    padding: 0 10px;
+    background: url(/Content/Panel/panel_bg.gif) 0 bottom no-repeat;
+}
+
+.product
+{
+    padding: 3px 10px;
+}
+.product ul
+{
+    background: url(/Content/Panel/icon2.gif) 5px 12px no-repeat;
+}
+.product ul li
+{
+    height: 58px;
+    padding: 14px 0 0 64px;
+    border-bottom: 1px dashed #dcdcdc;
+    color: #777;
+}
+.product ul li strong
+{
+    display: block;
+    height: 24px;
+    color: #333;
+}
+.product ul li a
+{
+    color: #777;
+}
+.product ul li a:hover
+{
+    text-decoration: underline;
+}
+.product ul li.product3
+{
+    border-bottom: none;
+}

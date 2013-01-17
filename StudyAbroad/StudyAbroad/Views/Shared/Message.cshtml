@@ -1,0 +1,16 @@
+﻿@if (!String.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+{
+    <div class="error">@TempData["ErrorMessage"]</div>
+}
+else if (!String.IsNullOrEmpty(TempData["SuccessMessage"] as string))
+{
+    <div class="success">@TempData["SuccessMessage"]</div>
+}
+else if (!String.IsNullOrEmpty(TempData["WarningMessage"] as string))
+{
+    <div class="warning">@TempData["WarningMessage"]</div>
+}
+else if (!String.IsNullOrEmpty(TempData["InformationMessage"] as string))
+{
+    <div class="info">@TempData["InformationMessage"]</div>
+}

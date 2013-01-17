@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Manage User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <p>
+        <b>Total Registered Users: </b>@ViewData["RegisteredUsers"]</p>
+    <p>
+        <b>Users Online Now: </b>@ViewData["UsersOnlineNow"]</p>
+    <hr />
+    <!-- user search options -->
+    <p>
+        Search Members: @Html.TextBox("searchInput", ViewData["searchInput"])
+        &nbsp;&nbsp; @Html.DropDownList("searchType", (SelectList)ViewData["searchOptionList"])&nbsp;&nbsp;
+        <button type="submit" id="user-manageUser-button" style="height: 28px">
+            Search</button></p>
+    <hr />
+    <!-- the user grid -->
+    <table cellpadding="2" cellspacing="0" align="left" summary="User Grid" border="1">
+        <tr style="font-weight: bold; background-color: #A8C3CB;">
+            <td align="center">
+                Username
+            </td>
+            <td align="center">
+                E-Mail
+            </td>
+            <td align="center">
+                Created
+            </td>
+            <td align="center">
+                Last Used
+            </td>
+            <td align="center">
+                Approved
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        @foreach (MembershipUser membershipUser in ViewData.Model)
+        { 
+            <tr>
+                <td>
+                    membershipUser.UserName
+                </td>
+                <td>
+                    membershipUser.Email
+                </td>
+                <td align="center">
+                    membershipUser.CreationDate.ToLocalTime()
+                </td>
+                <td align="center">
+                    membershipUser.LastActivityDate.ToLocalTime()
+                </td>
+                <td align="center">
+                    Html.CheckBox("","","",membershipUser.IsApproved, new {disabled="true"}) %>
+                </td>
+                <td>
+                    <a href="EditUser?id=<%= membershipUser.UserName %>">
+                        <img border="0" alt="Edit
+User" src="/content/images/EditSymbol.png" title="Modify User" align="middle" /></a>
+                </td>
+                <td>
+                    <a href="ManageUser?id=<%= membershipUser.UserName %>">
+                        <img border="0" alt="Delete User" src="/content/images/DeleteSymbol.png" title="Delete User"
+                            align="middle" /></a>
+                </td>
+            </tr>
+        }
+    </table>
+}

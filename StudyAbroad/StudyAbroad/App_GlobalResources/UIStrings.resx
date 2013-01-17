@@ -130,9 +130,9 @@
     <value>Logout</value>
   </data>
   <data name="Registry" xml:space="preserve">
-    <value>Registry</value>
+    <value>Join us</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>Welcome {0}</value>
   </data>
 </root>

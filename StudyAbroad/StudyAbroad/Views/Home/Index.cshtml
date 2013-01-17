@@ -1,9 +1,16 @@
 ﻿@{
     ViewBag.Title = @Resources.UIStrings.HomePageTitle;
 }
+@section HeaderContent
+{
+<link href="@Url.Content("~/Content/Css/Slider.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Css/Box.css")" rel="stylesheet" type="text/css" />
+}
+@section ScriptContent
+{
 <script src="@Url.Content("~/Scripts/Libs/slides.min.jquery.js")" type="text/javascript"></script>
 <script src="@Url.Content("~/Scripts/Home/Index.js")" type="text/javascript"></script>
-<link href="@Url.Content("~/Content/Css/Slider.css")" rel="stylesheet" type="text/css" />
+}
 <div id="slidesframe">
     <img src="/Content/Slider/new-ribbon.png" width="112" height="112" alt="New Ribbon"
         id="ribbon">
@@ -52,4 +59,35 @@
         information. For all other programs, contact the program administrator directly
         for application questions and deadline.
     </p>
+</div>
+<div class="box">
+    <h2>
+        <a class="more" href="#">更多..</a><span>Joke</span></h2>
+    <div class="box_con">
+        <p>
+               A 747 was halfway across the Atlantic when the captain got on the loud speaker,
+            "Attention, passengers. We have lost one of our engines, but we can certainly reach
+            London with the three we have left. Unfortunately, we will arrive an hour late as
+            a r esult." Shortly thereafter, the passengers heard the captain's voice again,
+            "Guess what, folks. We just lost our third engine, but please be assured we can
+            fly with only one. We will now arrive in London three hours late." At this point,
+            one passenger became furious. "For Pete's sake," he shouted, "If we lose another
+            engine, we'll be up here all night!"
+        </p>
+    </div>
+</div>
+<div class="box box1">
+    <h2>
+        <a class="more" href="#">更多..</a><span>News</span></h2>
+    <div class="box_con">
+        <ul>
+            <li><a href="#">纯CSS实现三列DIV等高布局</a></li>
+            <li><a href="#">HTML元素的ID和Name属性的区别</a></li>
+            <li><a href="#">完美兼容ie6,ie7,ie8以及firefox的css透明滤镜</a></li>
+            <li><a href="#">DIV+CSS实现放大镜效果的分页样式</a></li>
+            <li><a href="#">javascript为FF设置首页</a></li>
+            <li><a href="#">复制到系统剪贴板之IE,ff兼容版</a></li>
+            <li><a href="#">DIV+CSS实现放大镜效果的分页样式</a></li>
+        </ul>
+    </div>
 </div>

@@ -1,0 +1,74 @@
+﻿html, body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+image
+{
+    margin:0;
+}
+
+#wrapper /* CSS Sticky Footer */
+{
+    min-height: 100%;
+}
+
+#header
+{
+    overflow: auto;
+    height: 80px;
+    margin: 0;
+}
+
+/* Logo */
+#logo
+{
+    float: left;
+    margin: 0px;
+    padding: 10px;
+}
+
+#authbox
+{
+    padding: 10px;
+    float: right;
+}
+
+/* Menu */
+#menu
+{
+    width: 600px;
+    padding: 0;
+}
+
+/* main */
+#main
+{
+    overflow: auto; /*  CSS Sticky Footer padding-bottom must equals footer' height*/
+    padding-bottom: 60px;
+}
+
+#content
+{
+    float: left; /* padding-right shold bigger than the width of sidebar*/
+    padding: 0 240px 4em 3em; 
+    /*background: #FFA;*/
+}
+
+#sidebar
+{
+    float: right;
+    width: 230px;
+    margin: 10px 9px 4em -241px;
+}
+
+#footer
+{
+    /*CSS Sticky Footer*/
+    margin: -60px auto 0 auto; /* negative value of footer height */
+    height: 60px;
+    clear: both; /*background: #ccc;*/ /*Just for debugging*/
+}
