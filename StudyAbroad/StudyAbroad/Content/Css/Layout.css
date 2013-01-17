@@ -8,7 +8,7 @@
 
 image
 {
-    margin:0;
+    margin: 0;
 }
 
 #wrapper /* CSS Sticky Footer */
@@ -40,7 +40,6 @@ image
 /* Menu */
 #menu
 {
-    width: 600px;
     padding: 0;
 }
 
@@ -54,8 +53,7 @@ image
 #content
 {
     float: left; /* padding-right shold bigger than the width of sidebar*/
-    padding: 0 240px 4em 3em; 
-    /*background: #FFA;*/
+    padding: 0 240px 4em 3em; /*background: #FFA;*/
 }
 
 #sidebar

@@ -1,0 +1,22 @@
+#services
+{
+    width:700px;
+    overflow:auto;    
+    margin:0 auto;
+}
+#services .col
+{
+    width:200px;
+    display: inline;
+    float: left;
+    position: relative;
+    padding:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.img-border
+{
+    margin: 13px 0 0 0;
+    border: #d2d9d8 1px solid;
+}

@@ -1,0 +1,105 @@
+﻿dl.adr
+{
+    margin-top: 14px;
+}
+dl.adr dt
+{
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #6e5137;
+    font-weight: bold;
+}
+dl.adr dd span
+{
+    width: 80px;
+    display: block;
+    float: left;
+    text-align: right;
+    margin-right: 5px;
+}
+dl.adr dd
+{
+}
+dl.adr dd a
+{
+}
+dl.adr dd a:hover
+{
+}
+
+#contact fieldset
+{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+
+#contact form
+{
+    margin: 31px 0 0px 0px;
+    width: 590px;
+}
+#contact form input
+{
+    border: #d2d9d8 1px solid;
+    background: #fff;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b4b4b4;
+    padding: 6px 8px 6px 10px;
+    outline: medium none;
+    width: 500px;
+    height: 15px;
+    float: left;
+}
+#contact form textarea
+{
+    border: #d2d9d8 1px solid;
+    background: #fff;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b4b4b4;
+    height: 202px;
+    outline: medium none;
+    overflow: auto;
+    padding: 6px 0px 0px 10px;
+    width: 508px;
+    resize: none;
+    margin: 0px 0 0 0;
+    float: left;
+}
+#contact form label
+{
+    position: relative;
+    display: block;
+    min-height: 35px;
+    overflow: hidden;
+}
+#contact .btns
+{
+    text-align: right;
+    overflow: hidden;
+    width: 590px;
+    padding-top: 10px;
+}
+#contact .btns a
+{
+    display: inline-block;
+    margin-left: 31px;
+}
+#contact form label strong
+{
+    float: left;
+    display: block;
+    padding-top: 8px;
+    line-height: 15px;
+    width: 70px;
+    color: #85a09d;
+    white-space: nowrap;
+}

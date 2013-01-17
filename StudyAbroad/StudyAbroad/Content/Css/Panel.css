@@ -17,7 +17,7 @@
     margin: 0;
     height: 25px;
     padding: 6px 10px 0 10px;
-    background: url(/Content/Panel/panel_bg.gif) 0 0 no-repeat;
+    background: url(/Content/Images/Panel/panel_bg.gif) 0 0 no-repeat;
     font-size: 14px;
     color: #444;
 }
@@ -30,7 +30,7 @@
 .panel_content
 {
     padding: 0 10px;
-    background: url(/Content/Panel/panel_bg.gif) 0 bottom no-repeat;
+    background: url(/Content/Images/Panel/panel_bg.gif) 0 bottom no-repeat;
 }
 
 .product
@@ -39,7 +39,7 @@
 }
 .product ul
 {
-    background: url(/Content/Panel/icon2.gif) 5px 12px no-repeat;
+    background: url(/Content/Images/Panel/icon2.gif) 5px 12px no-repeat;
 }
 .product ul li
 {

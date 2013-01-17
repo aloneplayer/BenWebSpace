@@ -10,10 +10,11 @@
 }
 .box h2
 {
+    padding:0;
     height: 23px;
-    padding: 5px 10px 0 10px;
-    font-size: 14px;
-    background: url(/Content/Box/box_title_bg.gif) 0 0;
+    padding: 0px 10px 0 10px;
+    font-size: 12px;
+    background: url(/Content/Images/Box/box_title_bg.gif) 0 0;
     border-bottom: 1px solid #dbdbdb;
     color: #444;
     overflow: hidden;
@@ -22,7 +23,7 @@
 {
     display: block;
     height: 25px;
-    background: url(/Content/Box/icon.gif) 0 -3px no-repeat;
+    background: url(/Content/Images/Box/icon.gif) 0 -3px no-repeat;
     padding-left: 20px;
 }
 .more
@@ -32,12 +33,12 @@
     font-size: 12px;
     font-weight: normal;
     color: #db8d3b;
-    background: url(/Content/Box/icon.gif) 0 -46px no-repeat;
+    background: url(/Content/Images/Box/icon.gif) 0 -46px no-repeat;
 }
 .more:hover
 {
     color: #cb6d0a;
-    background: url(/Content/Box/icon.gif) 0 -96px no-repeat;
+    background: url(/Content/Images/Box/icon.gif) 0 -96px no-repeat;
 }
 .box_con
 {

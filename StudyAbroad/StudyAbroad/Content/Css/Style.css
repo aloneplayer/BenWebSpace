@@ -1,9 +1,51 @@
 ﻿/* Global properties ======================================================== */
 body
 {
-    font: 12px Arial, Helvetica, sans-serif;
-    color: #85A09D;
+    font-family: Verdana;
     background: url(../images/bg.jpg) 0 0 repeat-x #fff;
+    font-size: 12px;
+}
+
+h2
+{
+    font-size: 36px;
+    color: #6a4c31;
+    font-weight: normal;
+}
+
+h2.title
+{
+    /*border-bottom: 2px solid #D2D9D8;     border-top: 2px solid #D2D9D8; */
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+}
+
+.titlebar
+{
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3
+{
+    color: #85A09D;
+    font-family: 'Open Sans' ,sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+a
+{
+    color: #85A09D;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: underline; /*text-transform: uppercase;*/
 }
 
 ul
@@ -75,6 +117,15 @@ img
 #menu .active a
 {
     color: #FFFFFF;
+}
+
+ul.textlist li
+{
+    background: url("/content/images/textlistmarker.gif") no-repeat scroll 0 7px transparent;
+    font-size: 11px;
+    line-height: 18px;
+    padding: 0 0 6px 12px;
+    text-transform: uppercase;
 }
 
 /*Footer style*/

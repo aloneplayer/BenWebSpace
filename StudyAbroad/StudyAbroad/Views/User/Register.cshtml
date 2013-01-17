@@ -2,6 +2,10 @@
     ViewBag.Title = "Register New User";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section HeaderContent
+{
+    <link href="@Url.Content("~/Content/Css/Message.css")" rel="stylesheet" type="text/css" />
+}
 @Html.Partial("Message")
 @using (Html.BeginForm())
 {
@@ -56,10 +60,10 @@
 }
 @section ScriptContent
 {
-<script type="text/javascript" src="/content/scripts/register.js"></script>
-if (IsPostBack) { 
-<script type="text/javascript">
-    ValidateRegistration();
-</script>
+    <script type="text/javascript" src="/Scripts/User/register.js"></script>
+    if (IsPostBack) {
+    <script type="text/javascript">
+        ValidateRegistration();
+    </script>
 }
 }

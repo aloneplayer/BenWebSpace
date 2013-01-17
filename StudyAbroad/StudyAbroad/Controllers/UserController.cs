@@ -337,5 +337,17 @@ namespace StudyAbroad.Controllers
                     return "An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
             }
         }
+
+        [AcceptVerbs("POST")]
+        public JsonResult LeaveContactMessage(FormCollection collection)
+        {
+            //string userName = collection["UserName"];
+            //string password = collection["UserPassword"];
+            //string returnUrl = collection["ReturnUrl"];
+
+      
+            bool isSuccess = false; 
+            return new JsonResult() { Data = isSuccess.ToString() };
+        }
     }
 }
