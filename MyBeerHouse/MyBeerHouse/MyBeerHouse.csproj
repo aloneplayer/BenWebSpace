@@ -75,6 +75,8 @@
     <Compile Include="Configuration\NewslettersElement.cs" />
     <Compile Include="Configuration\PollsElement.cs" />
     <Compile Include="Configuration\TheBeerHouseSection.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -83,8 +85,11 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\ArticleCollectionWrapper.cs" />
+    <Compile Include="Models\ArticleQueries.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\CommerceQueries.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Extensions.cs" />
@@ -104,6 +109,8 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProfileInformation.cs" />
     <Compile Include="Models\ShippingMethod.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\ShoppingCartItem.cs" />
     <Compile Include="Models\TheBeerHouseDataContext.cs" />
     <Compile Include="Models\UserInformation.cs" />
     <Compile Include="Models\Vote.cs" />
@@ -479,6 +486,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\Message.cshtml" />
+    <Content Include="Views\Article\Index.cshtml" />
+    <Content Include="Views\Article\CategoryIndex.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
