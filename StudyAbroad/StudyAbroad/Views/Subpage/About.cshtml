@@ -2,5 +2,92 @@
     ViewBag.Title = "About";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>About</h2>
+@section HeaderContent
+{
+    <link href="@Url.Content("~/Content/Css/Staffs.css")" rel="stylesheet" type="text/css" />
+}
+<div id="staffs">
+    <div class="titlebar">
+        <h2 class="title">
+            Our team:</h2>
+    </div>
+    <div class="col">
+        <div class="box-2">
+            <img src="/Content/images/Staffs/Staff1.jpg" alt="" class="img-indent img-border">
+            <div class="extra-wrap">
+                <p>
+                    Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis
+                    tempor eros nec
+                    <br>
+                    tristique.</p>
+                <strong>Richard Smith</strong><br>
+                <span>marketolog</span>
+            </div>
+        </div>
+        <div class="box-2 top-4 p2">
+            <img src="/Content/images/Staffs/Staff2.jpg" alt="" class="img-indent img-border">
+            <div class="extra-wrap">
+                <p>
+                    Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis
+                    tempor eros nec
+                    <br>
+                    tristique.</p>
+                <strong>John Johnson</strong><br>
+                <span>developer</span>
+            </div>
+        </div>
+        <a href="#" class="link-1">read more</a>
+    </div>
+    <div class="col">
+        <div class="box-2">
+            <img src="/Content/images/Staffs/Staff3.jpg" alt="" class="img-indent img-border">
+            <div class="extra-wrap">
+                <p>
+                    Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis
+                    tempor eros nec
+                    <br>
+                    tristique.</p>
+                <strong>Sara Green</strong><br>
+                <span>manager</span>
+            </div>
+        </div>
+        <div class="box-2 top-4">
+            <img src="/Content/images/Staffs/Staff4.jpg" alt="" class="img-indent img-border">
+            <div class="extra-wrap">
+                <p>
+                    Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis
+                    tempor eros nec
+                    <br>
+                    tristique.</p>
+                <strong>Jessica Cox</strong><br>
+                <span>layer</span>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="box-2">
+            <img src="/Content/images/Staffs/Staff5.jpg" alt="" class="img-indent img-border">
+            <div class="extra-wrap">
+                <p>
+                    Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis
+                    tempor eros nec
+                    <br>
+                    tristique.</p>
+                <strong>April Nelson</strong><br>
+                <span>pr director</span>
+            </div>
+        </div>
+        <div class="box-2 top-4">
+            <img src="/Content/images/Staffs/Staff6.jpg" alt="" class="img-indent img-border">
+            <div class="extra-wrap">
+                <p>
+                    Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis
+                    tempor eros nec
+                    <br>
+                    tristique.</p>
+                <strong>Thom Black</strong><br>
+                <span>investor</span>
+            </div>
+        </div>
+    </div>
+</div>

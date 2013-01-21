@@ -72,6 +72,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UIStrings.zh.resx</DependentUpon>
     </Compile>
+    <Content Include="Content\Css\Staffs.css" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactMessageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -101,6 +102,12 @@
     <Content Include="Content\Css\Layout.css" />
     <Content Include="Content\Images\bg.jpg" />
     <Content Include="Content\Css\Slider.css" />
+    <Content Include="Content\Images\Staffs\Staff1.jpg" />
+    <Content Include="Content\Images\Staffs\Staff6.jpg" />
+    <Content Include="Content\Images\Staffs\Staff5.jpg" />
+    <Content Include="Content\Images\Staffs\Staff4.jpg" />
+    <Content Include="Content\Images\Staffs\Staff3.jpg" />
+    <Content Include="Content\Images\Staffs\Staff2.jpg" />
     <Content Include="Content\Images\textlistmarker.gif" />
     <Content Include="Content\Images\Message\error.png" />
     <Content Include="Content\Images\Message\info.png" />
