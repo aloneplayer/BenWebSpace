@@ -92,6 +92,7 @@
       <DependentUpon>StudyAbroad.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Css\Contact.css" />
+    <Content Include="Content\Css\IconBox.css" />
     <Content Include="Content\Images\Box\box_title_bg.gif" />
     <Content Include="Content\Images\Box\icon.gif" />
     <Content Include="Content\Css\Box.css" />
@@ -100,6 +101,14 @@
     <Content Include="Content\Css\Layout.css" />
     <Content Include="Content\Images\bg.jpg" />
     <Content Include="Content\Css\Slider.css" />
+    <Content Include="Content\Images\IconBox\Icon-PC.png" />
+    <Content Include="Content\Images\IconBox\Icon-Clock.png" />
+    <Content Include="Content\Images\IconBox\Icon-Global.png" />
+    <Content Include="Content\Images\IconBox\Icon-Mobile.png" />
+    <Content Include="Content\Images\IconBox\Icon-Browse.png" />
+    <Content Include="Content\Images\Icons\Linkmarker-1.gif" />
+    <Content Include="Content\Images\Icons\Linkmarker-2.png" />
+    <Content Include="Content\Images\Icons\Linkmarker-3.gif" />
     <Content Include="Content\Images\Staffs\Staff1.jpg" />
     <Content Include="Content\Images\Staffs\Staff6.jpg" />
     <Content Include="Content\Images\Staffs\Staff5.jpg" />

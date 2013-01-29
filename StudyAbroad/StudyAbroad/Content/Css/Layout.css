@@ -57,6 +57,12 @@ image
     padding: 0 240px 4em 3em;/*background: #FFA;*/
 }
 
+#content .row
+{
+    padding:10px 0 10px 0;
+    overflow: auto;
+    clear:both;
+}
 #content .col3
 {
     width:200px;
