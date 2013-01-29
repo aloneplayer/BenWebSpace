@@ -1,6 +1,29 @@
-﻿@{
+﻿@using MyBeerHouse.Models
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Index</h2>
+<div id="articles">
+    @foreach (Article article in ViewData.Model)
+    {
+        @Html.Partial("Article/ArticleItem", article)
+        <hr />
+    }
+</div>
+<% Html.RenderPartial("~/Views/Shared/Pager.ascx", ViewData.Model); %>
+@section SidebarContent
+{
+    <div id="news" class="boxed">
+        <h2 class="title">
+            Categories</h2>
+        <div class="content">
+            <ul>
+                <li class="first"><a href="/">All</a></li>
+                @foreach (var category in ViewData["Categories"] as IEnumerable<Category>)
+                {
+                    <li>@Html.ActionLink(category.Title, "Index", new { controller = "Article", category = category.Path })</li>
+                }
+            </ul>
+        </div>
+    </div>
+}

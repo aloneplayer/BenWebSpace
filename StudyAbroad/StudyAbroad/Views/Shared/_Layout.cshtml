@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link href="@Url.Content("~/Content/Css/Layout.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/Css/Style.css")" rel="stylesheet" type="text/css" />
-    <link href="@Url.Content("~/Content/Css/Panel.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Css/SidePanel.css")" rel="stylesheet" type="text/css" />
     @RenderSection("HeaderContent", required: false)
 </head>
 <body>
@@ -23,7 +23,7 @@
                 else
                 {
                     @Html.ActionLink(UIStrings.Login, "LogIn", "User") @:| @Html.ActionLink(UIStrings.Registry, "Register", "User")
-                }
+                                                                                                                                                                                }
             </div>
         </div>
         <div id="menu">
@@ -47,10 +47,24 @@
                 }
                 else
                 {
-                    <div class="panel">
+                    <div class="sidepanel">
+                        <h2>
+                            每日<strong>Joke</strong></h2>
+                        <div class="sidepanel_content">
+                            &nbsp;&nbsp;&nbsp;&nbsp;A 747 was halfway across the Atlantic when the captain got on the loud speaker,
+                            "Attention, passengers. We have lost one of our engines, but we can certainly reach
+                            London with the three we have left. Unfortunately, we will arrive an hour late as
+                            a r esult." Shortly thereafter, the passengers heard the captain's voice again,
+                            "Guess what, folks. We just lost our third engine, but please be assured we can
+                            fly with only one. We will now arrive in London three hours late." At this point,
+                            one passenger became furious. "For Pete's sake," he shouted, "If we lose another
+                            engine, we'll be up here all night!"
+                        </div>
+                    </div>
+                    <div class="sidepanel">
                         <h2>
                             <strong>Services</strong></h2>
-                        <div class="panel_content  product">
+                        <div class="sidepanel_content  product">
                             <ul>
                                 <li><strong>语音业务：</strong><a href="#">普通电话</a> | <a href="#">语音数字中继</a></li>
                                 <li><strong>语音业务：</strong><a href="#">普通电话</a> | <a href="#">语音数字中继</a></li>
@@ -58,10 +72,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="panel">
+                    <div class="sidepanel">
                         <h2>
                             <strong>联系</strong>我们</h2>
-                        <div class="panel_content contact">
+                        <div class="sidepanel_content contact">
                             <a href="#">
                                 <img src="/Content/images/tel.gif" alt="联系我们" width="222" height="112" /></a></div>
                     </div>

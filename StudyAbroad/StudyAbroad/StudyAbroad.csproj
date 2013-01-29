@@ -72,7 +72,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UIStrings.zh.resx</DependentUpon>
     </Compile>
-    <Content Include="Content\Css\Staffs.css" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactMessageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -93,12 +92,11 @@
       <DependentUpon>StudyAbroad.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Css\Contact.css" />
-    <Content Include="Content\Css\Services.css" />
     <Content Include="Content\Images\Box\box_title_bg.gif" />
     <Content Include="Content\Images\Box\icon.gif" />
     <Content Include="Content\Css\Box.css" />
     <Content Include="Content\Css\Message.css" />
-    <Content Include="Content\Css\Panel.css" />
+    <Content Include="Content\Css\SidePanel.css" />
     <Content Include="Content\Css\Layout.css" />
     <Content Include="Content\Images\bg.jpg" />
     <Content Include="Content\Css\Slider.css" />
@@ -166,7 +164,9 @@
     <Content Include="Scripts\Libs\jquery-ui-1.9.2.custom.min.js" />
     <Content Include="Scripts\Libs\slides.min.jquery.js" />
     <Content Include="Scripts\User\register.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

@@ -52,15 +52,39 @@ image
 
 #content
 {
+    min-width: 700px;
     float: left; /* padding-right shold bigger than the width of sidebar*/
-    padding: 0 240px 4em 3em; /*background: #FFA;*/
+    padding: 0 240px 4em 3em;/*background: #FFA;*/
+}
+
+#content .col3
+{
+    width:200px;
+    display: inline;
+    float: left;
+    position: relative;
+    padding:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#content .col2
+{
+    width:320px;
+    display: inline;
+    float: left;
+    position: relative;
+    padding:10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #sidebar
 {
     float: right;
     width: 230px;
-    margin: 10px 9px 4em -241px;
+    /*Make browser think the width of siderbar<0*/
+    margin: 10px 9px 4em -241px; 
 }
 
 #footer

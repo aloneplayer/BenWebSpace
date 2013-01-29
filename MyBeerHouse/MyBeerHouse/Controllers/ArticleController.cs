@@ -91,7 +91,7 @@ namespace MyBeerHouse.Controllers
         /// <param name="articleId">The article id.</param>
         /// <param name="rating">The rating.</param>
         /// <returns></returns>
-        [ServiceOnly, HttpPostOnly]
+        //[ServiceOnly, HttpPostOnly]
         public ActionResult RateArticle(int articleId, int rating)
         {
             TheBeerHouseDataContext dc = new TheBeerHouseDataContext();
@@ -415,12 +415,12 @@ namespace MyBeerHouse.Controllers
                 }
             }
 
-            ViewData["title"] = title;
+            ViewData["categorytitle"] = title;
             ViewData["importance"] = importance;
             ViewData["imageUrl"] = imageUrl;
             ViewData["description"] = description;
 
-            ViewData["PageTitle"] = "Create Category";
+            ViewBag.Title = "Create Category";
 
             return View("CreateCategory");
         }
@@ -467,12 +467,12 @@ namespace MyBeerHouse.Controllers
                 }
             }
 
-            ViewData["title"] = title ?? category.Title;
+            ViewData["categorytitle"] = title ?? category.Title;
             ViewData["importance"] = importance ?? category.Importance;
             ViewData["imageUrl"] = imageUrl ?? category.ImageUrl;
             ViewData["description"] = description ?? category.Description;
 
-            ViewData["PageTitle"] = "Edit Category";
+            ViewBag.Title = "Edit Category";
 
             return View("CreateCategory");
         }

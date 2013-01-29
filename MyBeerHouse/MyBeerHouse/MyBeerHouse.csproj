@@ -78,6 +78,8 @@
     <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsLetterController.cs" />
+    <Compile Include="Controllers\PollController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -99,12 +101,14 @@
     <Compile Include="Models\Iso3166CountryCodes.cs" />
     <Compile Include="Models\Language.cs" />
     <Compile Include="Models\Newsletter.cs" />
+    <Compile Include="Models\NewsLetterQueries.cs" />
     <Compile Include="Models\Occupation.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\Pagination.cs" />
     <Compile Include="Models\Poll.cs" />
     <Compile Include="Models\PollOption.cs" />
+    <Compile Include="Models\PollQueries.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProfileInformation.cs" />
@@ -120,6 +124,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\WebHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\TheBeerHouse.mdf" />
@@ -466,7 +471,9 @@
     <Content Include="Scripts\tinymce.3.4.5\utils\form_utils.js" />
     <Content Include="Scripts\tinymce.3.4.5\utils\mctabs.js" />
     <Content Include="Scripts\tinymce.3.4.5\utils\validate.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -488,8 +495,35 @@
     <Content Include="Views\Shared\Message.cshtml" />
     <Content Include="Views\Article\Index.cshtml" />
     <Content Include="Views\Article\CategoryIndex.cshtml" />
+    <Content Include="Views\Shared\Article\CategoryItem.cshtml" />
+    <Content Include="Views\Shared\Article\AdminSidebar.cshtml" />
+    <Content Include="Views\Article\ManageCategories.cshtml" />
+    <Content Include="Views\Article\CreateCategory.cshtml" />
+    <Content Include="Views\Article\RemoveCategory.cshtml" />
+    <Content Include="Views\Shared\Article\ArticleItem.cshtml" />
+    <Content Include="Views\Article\ManageArticles.cshtml" />
+    <Content Include="Views\Shared\Pager.cshtml" />
+    <Content Include="Views\Article\CreateArticle.cshtml" />
+    <Content Include="Views\Article\RemoveArticle.cshtml" />
+    <Content Include="Views\Shared\Article\CommentItem.cshtml" />
+    <Content Include="Views\Article\ManageComments.cshtml" />
+    <Content Include="Views\Article\ViewArticle.cshtml" />
+    <Content Include="Views\Shared\Poll\PollResultItem.cshtml" />
+    <Content Include="Views\Shared\Poll\PollItem.cshtml" />
+    <Content Include="Views\Shared\Poll\AdminSidebar.cshtml" />
+    <Content Include="Views\Poll\ManagePolls.cshtml" />
+    <Content Include="Views\Poll\CreatePoll.cshtml" />
+    <Content Include="Views\Poll\RemovePoll.cshtml" />
+    <Content Include="Views\Poll\Index.cshtml" />
+    <Content Include="Views\Shared\Newsletter\NewsletterStatus.cshtml" />
+    <Content Include="Views\NewsLetter\Index.cshtml" />
+    <Content Include="Views\NewsLetter\ManageNewsletters.cshtml" />
+    <Content Include="Views\NewsLetter\CreateNewsletter.cshtml" />
+    <Content Include="Views\Shared\Forums\AdminSidebar.cshtml.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Forums\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>

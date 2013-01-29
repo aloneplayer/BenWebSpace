@@ -57,6 +57,12 @@ img
     border: 0px;
 }
 
+.img-border
+{
+    margin: 13px 0 0 0;
+    border: #d2d9d8 1px solid;
+}
+
 /*Logo style*/
 #logo span
 {

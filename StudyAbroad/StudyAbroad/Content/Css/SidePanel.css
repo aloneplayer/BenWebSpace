@@ -1,17 +1,17 @@
-﻿.panel
+﻿.sidepanel
 {
     margin-bottom: 8px;
     font-size: 12px;
 }
 
-.panel ul
+.sidepanel ul
 {
     padding: 0;
     margin: 0;
 }
 
 /*h2 is the panel header*/
-.panel h2
+.sidepanel h2
 {
     padding: 0;
     margin: 0;
@@ -22,14 +22,14 @@
     color: #444;
 }
 
-.panel h2 strong
+.sidepanel h2 strong
 {
     color: #f30;
 }
 
-.panel_content
+.sidepanel_content
 {
-    padding: 0 10px;
+    padding: 10px;
     background: url(/Content/Images/Panel/panel_bg.gif) 0 bottom no-repeat;
 }
 

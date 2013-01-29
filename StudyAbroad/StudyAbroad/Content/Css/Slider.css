@@ -1,35 +1,38 @@
-
-#slidesframe {
-	width:600px;
-	height:350px;
-	position:relative;
-	margin:10px auto 0 auto;
+#slidesframe
+{
+    width: 600px;
+    height: 350px;
+    position: relative;
+    margin: 10px auto 0 auto;
 }
 
-#ribbon {
-	position:absolute;
-	top:-3px;
-	left:-15px;
-	z-index:500;
+#ribbon
+{
+    position: absolute;
+    top: -3px;
+    left: -15px;
+    z-index: 500;
 }
 
-#frame {
-	position:absolute;
-	z-index:0;
-	width:739px;
-	height:341px;
-	top:-3px;
-	left:-80px;
+#frame
+{
+    position: absolute;
+    z-index: 0;
+    width: 739px;
+    height: 341px;
+    top: -3px;
+    left: -80px;
 }
 
 /*
 	Slideshow
 */
-#slides {
-	position:absolute;
-	top:15px;
-	left:4px;
-	z-index:100;
+#slides
+{
+    position: absolute;
+    top: 15px;
+    left: 4px;
+    z-index: 100;
 }
 
 /*
@@ -39,12 +42,13 @@
 	Set to display none, prevents content flash
 */
 
-.slides_container {
-	width:570px;
-	height:270px;
-	overflow:hidden;
-	position:relative;
-	display:none;
+.slides_container
+{
+    width: 570px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    display: none;
 }
 
 /*
@@ -55,61 +59,69 @@
 	Set to display block
 */
 
-.slides_container a {
-	width:570px;
-	height:270px;
-	display:block;
+.slides_container a
+{
+    width: 570px;
+    height: 270px;
+    display: block;
 }
 
-.slides_container a img {
-	display:block;
+.slides_container a img
+{
+    display: block;
 }
 
 /*
 	Next/prev buttons
 */
 
-#slides .next,#slides .prev {
-	position:absolute;
-	top:107px;
-	left:-39px;
-	width:24px;
-	height:43px;
-	display:block;
-	z-index:101;
+#slides .next, #slides .prev
+{
+    position: absolute;
+    top: 107px;
+    left: -39px;
+    width: 24px;
+    height: 43px;
+    display: block;
+    z-index: 101;
 }
 
-#slides .next {
-	left:585px;
+#slides .next
+{
+    left: 585px;
 }
 
 /*
 	Pagination
 */
 
-.pagination {
-	margin:26px auto 0;
-	width:100px;
+.pagination
+{
+    margin: 26px auto 0;
+    width: 100px;
 }
 
-.pagination li {
-	float:left;
-	margin:0 1px;
-	list-style:none;
+.pagination li
+{
+    float: left;
+    margin: 0 1px;
+    list-style: none;
 }
 
-.pagination li a {
-	display:block;
-	width:12px;
-	height:0;
-	padding-top:12px;
-	background-image:url(../Images/Slider/pagination.png);
-	background-position:0 0;
-	float:left;
-	overflow:hidden;
+.pagination li a
+{
+    display: block;
+    width: 12px;
+    height: 0;
+    padding-top: 12px;
+    background-image: url(../Images/Slider/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
 }
 
-.pagination li.current a {
-	background-position:0 -12px;
+.pagination li.current a
+{
+    background-position: 0 -12px;
 }
 

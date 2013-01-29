@@ -28,7 +28,7 @@ dl.adr dd a:hover
 {
 }
 
-#contact fieldset
+#contact_form fieldset
 {
     background: transparent;
     border: 0 none;
@@ -40,12 +40,12 @@ dl.adr dd a:hover
     vertical-align: top;
 }
 
-#contact form
+#contact_form form
 {
     margin: 31px 0 0px 0px;
     width: 590px;
 }
-#contact form input
+#contact_form form input
 {
     border: #d2d9d8 1px solid;
     background: #fff;
@@ -58,7 +58,7 @@ dl.adr dd a:hover
     height: 15px;
     float: left;
 }
-#contact form textarea
+#contact_form form textarea
 {
     border: #d2d9d8 1px solid;
     background: #fff;
@@ -74,26 +74,26 @@ dl.adr dd a:hover
     margin: 0px 0 0 0;
     float: left;
 }
-#contact form label
+#contact_form form label
 {
     position: relative;
     display: block;
     min-height: 35px;
     overflow: hidden;
 }
-#contact .btns
+#contact_form .btns
 {
     text-align: right;
     overflow: hidden;
     width: 590px;
     padding-top: 10px;
 }
-#contact .btns a
+#contact_form .btns a
 {
     display: inline-block;
     margin-left: 31px;
 }
-#contact form label strong
+#contact_form form label strong
 {
     float: left;
     display: block;
