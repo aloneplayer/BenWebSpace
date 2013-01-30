@@ -1,0 +1,16 @@
+﻿@if (!String.IsNullOrEmpty(ViewBag.ErrorMessage as string))
+{
+    <div class="error">@ViewBag.ErrorMessage</div>
+}
+else if (!String.IsNullOrEmpty(@ViewBag.SuccessMessage as string))
+{
+    <div class="success">@ViewBag.SuccessMessage</div>
+}
+else if (!String.IsNullOrEmpty(@ViewBag.WarningMessage as string))
+{
+    <div class="warning">@ViewBag.WarningMessage</div>
+}
+else if (!String.IsNullOrEmpty(@ViewBag.InformationMessage as string))
+{
+    <div class="info">@ViewBag.InformationMessage</div>
+}
