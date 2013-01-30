@@ -1,0 +1,94 @@
+﻿/* Form styles */
+legend
+{
+    padding: 10px;
+    font-weight: bold;
+}
+
+fieldset
+{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+    clear: left;
+}
+
+div .editor-label
+{
+    clear: left;
+    color: #85A09D;
+    display: block;
+    float: left;
+    line-height: 15px;
+    white-space: nowrap;
+}
+
+div .editor-field
+{
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+}
+
+textarea
+{
+    resize: none;
+}
+
+.formbuttons
+{
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.formbuttons a
+{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+input[type=text], input[type=password], textarea, select
+{
+    border: 1px solid #D2D9D8;
+}
+
+/* Styles for validation helpers */
+/*{*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000 !important;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+/* Styles for validation helpers */
+/*}*/
+
+

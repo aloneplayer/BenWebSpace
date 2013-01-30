@@ -1,0 +1,58 @@
+﻿.iconbox
+{
+    width: 320px;
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+.iconboxpad
+{
+    width: 50px;
+    display: inline;
+    float: left;
+}
+
+.wrapper
+{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.extra-wrap
+{
+    overflow: hidden;
+}
+
+.iconbox h2
+{
+    font-size: 20px;
+    color: #6a4c31;
+    font-weight: normal;
+}
+
+.iconbox h3
+{
+    color: #85A09D;
+    font-family: 'Open Sans' ,sans-serif;
+    font-size: 14px;
+}
+
+.img-indent2
+{
+    float: left;
+    margin: 0 15px 0px 0;
+}
+a.link-1
+{
+    padding-right: 15px;
+    background: url(/content/images/Icons/Linkmarker-1.gif) right 8px no-repeat;
+}
+
+a.link-2
+{
+    line-height: 18px;
+    padding: 6px 20px 0px 0px;
+    background: url(/content/images/Icons/Linkmarker-2.png) right 8px no-repeat;
+}
+

@@ -9,8 +9,7 @@
 @Html.Partial("Message")
 @using (Html.BeginForm(new { @class = "user-login" }))
 {
-    <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
-		
+    <input type="hidden" name="returnUrl" value="@Request.QueryString["returnUrl"]" />
     <p class="field input">
         <label for="userName">
             User Name</label><br />

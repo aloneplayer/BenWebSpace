@@ -1,10 +1,12 @@
-﻿@{
+﻿@model StudyAbroad.Models.ContactMessage
+@{
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section HeaderContent
 {
     <link href="@Url.Content("~/Content/Css/Contact.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Css/Form.css")" rel="stylesheet" type="text/css" />
 }
 <div class="titlebar">
     <h2 class="title">
@@ -31,18 +33,13 @@
         <h2 class="title">
             Leave message</h2>
     </div>
-    <div>
-        <form id="form" method="post">
-        <fieldset>
-            <label>
-                <strong>Full name:</strong><input type="text" value=""></label>
-            <label>
-                <strong>Email:</strong><input type="text" value=""></label>
-            <label>
-                <strong>Message:</strong><textarea></textarea></label>
-            <div class="btns">
-                <a href="#" class="link-1">clear</a><a href="#" class="link-1" onclick="document.getElementById('form').submit()">send</a></div>
-        </fieldset>
-        </form>
+    <div id="form_container">
+        @Html.Partial("_ContactForm", Model)
     </div>
 </div>
+@section ScriptContent
+{
+    <script src="@Url.Content("~/Scripts/Libs/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Libs/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/ContactMessage/Create.js")" type="text/javascript"></script>
+}

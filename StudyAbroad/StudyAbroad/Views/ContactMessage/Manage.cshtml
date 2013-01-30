@@ -1,0 +1,69 @@
+﻿@using StudyAbroad.Models
+@model StudyAbroad.Models.Pagination<StudyAbroad.Models.ContactMessage>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section HeaderContent
+{
+   <link href="@Url.Content("~/Content/Css/Pager.css")" rel="stylesheet" type="text/css" />   
+}
+<h2 class="title">
+    @ViewBag.Title</h2>
+<table cellpadding="2" cellspacing="0" align="left" summary="User Grid" border="1">
+    <tr style="font-weight: bold; background-color: #A8C3CB;">
+        <td align="center">
+            Username
+        </td>
+        <td align="center">
+            E-Mail
+        </td>
+        <td align="center">
+            Message
+        </td>
+        <td align="center">
+            IP
+        </td>
+        <td align="center">
+            Created
+        </td>
+        <td>
+            &nbsp;
+        </td>
+    </tr>
+    @{
+        IEnumerator<ContactMessage> enm = Model.GetEnumerator();  
+    }
+    @while (enm.MoveNext())
+    {
+        <tr>
+            <td>
+                @enm.Current.AddedBy
+            </td>
+            <td>
+                @enm.Current.AddedByEmail
+            </td>
+            <td align="center">
+                @if (enm.Current.Body.Length > 50)
+                {
+                    @enm.Current.Body.Substring(0, 50)@:...
+                }
+                else
+                {
+                    @enm.Current.Body
+                }
+            </td>
+            <td align="center">
+                @enm.Current.AddedByIP
+            </td>
+            <td align="center">
+                @enm.Current.AddedDate
+            </td>
+            <td>
+                <a href="/ContactMessage/Delete/">
+                    <img border="0" alt="Delete" src="/content/images/delete.png" title="Delete contect message"
+                        align="middle" /></a>
+            </td>
+        </tr>
+    }
+</table>
+@Html.Partial("_Pager", Model)

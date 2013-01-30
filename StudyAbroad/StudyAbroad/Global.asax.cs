@@ -21,6 +21,14 @@ namespace StudyAbroad
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            #region Contact Message
+            routes.MapRoute(
+                 "ManageContactMessage",
+                 "admin/ContactMessage/manage/{page}",
+                 new { controller = "ContactMessage", action = "manage", page = "1" },
+                 new { page = "[0-9]+" }
+             );
+            #endregion
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters

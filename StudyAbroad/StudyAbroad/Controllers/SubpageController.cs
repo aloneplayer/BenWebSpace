@@ -24,10 +24,7 @@ namespace StudyAbroad.Controllers
         {
             return View();
         }
-        public ActionResult Contact()
-        {
-            return View();
-        }
+      
         public ActionResult Resources()
         {
             return View();

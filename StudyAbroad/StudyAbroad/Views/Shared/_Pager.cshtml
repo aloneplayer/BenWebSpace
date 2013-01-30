@@ -1,0 +1,83 @@
+﻿@model StudyAbroad.Models.IPagination
+@functions
+{
+    public string GetPageUrl(int page)
+    {
+        if (page < 1)
+            throw new ArgumentOutOfRangeException("page", "'page' must be greater than or equal to 1");
+
+        return Url.Action(
+            this.ViewContext.RouteData.Values["action"] as string,
+            new { page = page }
+        );
+    }
+    public void GetStartAndEndPage(out int start, out int end)
+    {
+        int PageBuffer = 4;
+        if (ViewData.Model.PageCount <= PageBuffer)
+        {
+            start = 1;
+            end = ViewData.Model.PageCount;
+        }
+        else
+        {
+            start = Math.Max(ViewData.Model.PageNumber - PageBuffer, 1);
+            end = Math.Min(ViewData.Model.PageNumber + PageBuffer, ViewData.Model.PageCount);
+        }
+    }
+}
+<div class="pager">
+    @if (Model.TotalCount > Model.PageSize)
+    {
+        if (Model.PageNumber > 1)
+        { 
+        <a class="cap" href="@GetPageUrl(Model.PageNumber - 1)" rel="prev">Previous</a>
+        }
+        else
+        { 
+        <a class="cap disabled" rel="prev">Previous</a>	
+        }
+
+        int middleStart, middleEnd;
+        GetStartAndEndPage(out middleStart, out middleEnd);
+
+        if (middleStart > 1)
+        { 
+        <a href="@GetPageUrl(1)">1</a>
+            if (middleStart > 2)
+            { 
+        <span>...</span>
+            }
+        }
+
+        for (int i = middleStart; i <= middleEnd; i++)
+        {
+            if (ViewData.Model.PageNumber == i)
+            {
+        <a class="selected" rel="self">@i</a>
+            }
+            else
+            {
+        <a href="@GetPageUrl(i)">@i</a>
+            }
+        }
+
+        if (middleEnd < Model.PageCount)
+        {
+            if (middleEnd < Model.PageCount - 1)
+            { 
+        <span>...</span>
+            } 
+        <a href="@GetPageUrl(ViewData.Model.PageCount)">@Model.PageCount</a>
+        }
+
+        if (this.ViewData.Model.PageNumber < this.ViewData.Model.PageCount)
+        { 
+        <a class="cap" href="@GetPageUrl(this.ViewData.Model.PageNumber + 1)" rel="next">Next</a>
+        }
+        else
+        {
+        <a class="cap disabled" rel="next">Next</a>
+        }
+    }
+</div>

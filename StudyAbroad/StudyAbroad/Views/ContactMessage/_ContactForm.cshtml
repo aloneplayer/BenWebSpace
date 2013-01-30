@@ -1,0 +1,35 @@
+﻿@using Resources
+@model StudyAbroad.Models.ContactMessage
+@using (Html.BeginForm("Create", "ContactMessage"))
+{
+    @Html.ValidationSummary(true, ValidationStrings.Submit_Failed)
+    <fieldset>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AddedBy)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AddedBy)
+            <br />
+            @Html.ValidationMessageFor(model => model.AddedBy)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AddedByEmail)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AddedByEmail)
+            <br />
+            @Html.ValidationMessageFor(model => model.AddedByEmail)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Body)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Body, new { rows = "10" })
+            <br />
+            @Html.ValidationMessageFor(model => model.Body)
+        </div>
+        <div class="formbuttons">
+            <a href="#" class="link-1" id="clear">clear</a><a href="#" class="link-1" id="send">send</a>
+        </div>
+    </fieldset>
+}
