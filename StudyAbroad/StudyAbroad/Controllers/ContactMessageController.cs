@@ -19,15 +19,23 @@ namespace StudyAbroad.Controllers
         {
             if (ModelState.IsValid)
             {
-                StudyAbroadDataContext dc = new StudyAbroadDataContext();
+                try
+                {
+                    StudyAbroadDataContext dc = new StudyAbroadDataContext();
 
-                message.AddedByIP = Request.UserHostAddress;
-                message.AddedDate = DateTime.Now;
+                    message.AddedByIP = Request.UserHostAddress;
+                    message.AddedDate = DateTime.Now;
 
-                dc.ContactMessages.Add(message);
+                    dc.ContactMessages.Add(message);
 
-                // save changes to database
-                dc.SaveChanges();
+                    // save changes to database
+                    dc.SaveChanges();
+                }
+                catch (Exception exp)
+                {
+                    ViewBag.ErrorMessage = exp.Message;
+                    return View(message);
+                }
                 return PartialView("_Success", message);
             }
             else

@@ -257,7 +257,7 @@
     <Content Include="Views\UserAdmin\ManageUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Message.cshtml" />
+    <Content Include="Views\Shared\_Message.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Subpage\About.cshtml" />
