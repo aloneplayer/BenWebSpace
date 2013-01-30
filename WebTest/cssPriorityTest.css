@@ -1,0 +1,15 @@
+
+input[type=text]
+{
+    border: 1px solid #D2D9D8;
+}
+.input-validation-error-important
+{
+    border: 1px solid #ff0000 !important;
+    background-color: #ffeeee;
+}
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
