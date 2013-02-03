@@ -1,0 +1,22 @@
+﻿@using MyBeerHouse.Models
+@{
+    ViewBag.Title = "ManageArticles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="articles">
+    @foreach (Article article in ViewData.Model)
+    { 
+        <div class="admin">
+            @Html.ActionLink("Edit", "EditArticle", "Article", new { articleId = article.ArticleID }, null)&nbsp;|&nbsp;
+            @Html.ActionLink("Remove", "RemoveArticle", "Article", new { articleId = article.ArticleID }, null)</div>
+        @Html.Partial("Article/ArticleItem", article) 
+        <hr />
+    }
+    <%= Html.RenderUserControl("~/Views/Shared/Pager.ascx", ViewData.Model) %>
+</div>
+
+@section SidebarContent
+{
+  @Html.Partial("Article/AdminSidebar")
+}
+

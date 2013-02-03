@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "RemoveCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("Message")
+@if (ViewData.Model != null)
+{
+    using (Html.BeginForm("RemoveCategory", "Article", new { categoryId = ViewData.Model.CategoryID }, FormMethod.Post, new { @class = "category-remove" }))
+    {
+    <p class="field input">
+        <label for="categoryId">
+            Move Articles From <em>
+                @ViewData.Model.Title </em>To</label><br />
+        @Html.DropDownList("newCategoryId") <span class="input-message"></span>
+    </p>
+    <button type="submit" name="remove" value="yes" class="yes">
+        yes</button>
+    <button type="submit" name="remove" value="no" class="no">
+        no</button>
+    }
+}

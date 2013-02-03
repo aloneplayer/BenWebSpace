@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("Message")
+@using (Html.BeginForm(Url.Action(this.ViewContext.RouteData.Values["action"] as string, new { @class = "category-create" })))
+{
+    <p class="field input">
+        <label for="title">
+            Title</label><br />
+        @Html.TextBox("title", ViewData["categorytitle"], new { maxlength = 256 })
+        <span class="input-message"></span>
+    </p>
+    <p class="field input">
+        <label for="importance">
+            Importance</label><br />
+        @Html.TextBox("importance", ViewData["importance"],
+new { maxlength = 3 })
+        <span class="input-message"></span>
+    </p>
+    <p class="field input">
+        <label for="imageUrl">
+            Image</label><br />
+        @Html.TextBox("imageUrl", ViewData["imageUrl"], new { maxlength = 256 })
+        <span class="input-message"></span>
+    </p>
+    <p class="field input">
+        <label for="description">
+            Description</label><br />
+        @Html.TextArea("description", ViewData["description"])
+        <span class="input-message"></span>
+    </p>
+    if (this.ViewContext.RouteData.Values["action"] as string == "EditCategory")
+    {
+    <p>
+        <button type="submit" id="category-update-button">
+            Update Category</button></p>
+    }
+    else
+    { 
+    <p>
+        <button type="submit" id="category-create-button">
+            Create Category</button></p>
+    }
+}
+@section SidebarContent
+{
+    @Html.Partial("Article/AdminSidebar");
+}
+@section ScriptContent
+{
+    <script type="text/javascript" src="/content/scripts/manage-categories.js"></script>
+    @if (IsPost)
+    { 
+        <script type="text/javascript">
+            ValidateCategory();
+        </script>
+    }
+}

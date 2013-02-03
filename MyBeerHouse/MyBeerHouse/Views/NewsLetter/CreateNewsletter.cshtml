@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "CreateNewsletter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("Message")
+<form method="post" action="@Url.Action(this.ViewContext.RouteData.Values["action"] as string, "Newsletter")" class="newsletter-create">
+<p class="field input">
+    <label for="title">
+        Subject</label><br />
+    @Html.TextBox("subject", ViewData["subject"], new { @maxlength = 256 })
+    <span class="input-message"></span>
+</p>
+<p class="field input">
+    <label for="body">
+        Body</label><br />
+    @Html.TextArea("body", (string)Model.HtmlBody, new { style = "height: 500px" }) <span class="input-message">
+    </span>
+</p>
+<p>
+    <button type="submit" id="newsletter-create-button">
+        Send Newsletter</button></p>
+</form>
+@section ScriptContent
+{
+    <script src="@Url.Content("~/scripts/tinymce.3.4.5/tiny_mce_src.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/content/scripts/manage-newsletter.js")" type="text/javascript"></script>
+    if (IsPost) {
+    <script type="text/javascript">
+        ValidateNewsletter();
+    </script>
+}
+}

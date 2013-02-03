@@ -1,0 +1,24 @@
+﻿@using MyBeerHouse.Models
+@{
+    ViewBag.Title = "Manage Comments";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="article-comments">
+    @foreach (Comment comment in ViewData.Model)
+    {
+        @Html.Partial("Article/CommentItem", comment)
+        <div class="admin">
+            <a href="#edit" class="edit-comment" meta:id="@comment.CommentID">Edit</a> &nbsp;|&nbsp;
+            <a href="#remove" class="remove-comment" meta:id="@comment.CommentID">Remove</a>
+        </div>
+    }
+    <% Html.RenderPartial("~/Views/Shared/Pager.ascx", ViewData.Model); %>
+</div>
+@section SidebarContent
+{
+    @Html.Partial("/Article/AdminSidebar")
+}
+@section ScriptContent
+{
+    <script type="text/javascript" src="/content/scripts/manage-comments.js"></script>
+}

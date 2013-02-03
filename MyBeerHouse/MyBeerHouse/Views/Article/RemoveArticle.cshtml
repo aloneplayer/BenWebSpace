@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Remove Article";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("Message")
+@if (ViewData.Model != null)
+{ 
+    <form method="post" action="@Url.Action("RemoveArticle", "Article", new { articleId = ViewData.Model.ArticleID })" class="article-remove">
+    <button type="submit" name="remove" value="yes" class="yes" />
+    <button type="submit" name="remove" value="no" class="no" />
+    </form>
+}

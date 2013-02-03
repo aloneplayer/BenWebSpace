@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "ManagePolls";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="polls">
+    @foreach (MyBeerHouse.Models.Poll poll in ViewData.Model)
+    {
+        <div class="admin">
+            @if (!poll.IsCurrent)
+            { 
+                <a id="set-current-@poll.PollID" class="set-current" meta:id="@poll.PollID" href="#current">
+                    Make Current </a>
+                @:&nbsp;|&nbsp;
+                        }
+            <a id="set-archived-@poll.PollID" class="set-archived@(poll.IsArchived ? "archived" : "")" meta:id="@poll.PollID" href="#archived">
+                @(poll.IsArchived ? "Allow Voting" : "Archive")
+            </a>&nbsp;|&nbsp;
+            @Html.ActionLink("Edit", "EditPoll", new { controller = "Poll", pollId = poll.PollID })&nbsp;|&nbsp;
+            @Html.ActionLink("Remove", "RemovePoll", new { controller = "Poll", pollId = poll.PollID })</div>
+        @Html.Partial("Poll/PollItem", poll)
+        <hr />
+    }
+    <% Html.RenderPartial("~/Views/Shared/Pager.ascx", ViewData.Model); %>
+</div>
+@section SidebarContent
+{
+    @Html.Partial("Poll/AdminSidebar")
+}
+@section ScriptContent
+{
+    <script type="text/javascript" src="/content/scripts/manage-polls.js"></script>
+}

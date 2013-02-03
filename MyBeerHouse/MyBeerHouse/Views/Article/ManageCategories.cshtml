@@ -1,0 +1,23 @@
+﻿@using MyBeerHouse.Models
+
+@{
+    ViewBag.Title = "ManageCategories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="categories">
+    @foreach (Category category in ViewData.Model)
+    { 
+        <div class="admin">
+            @Html.ActionLink("Edit", "EditCategory", "Article", new { categoryId = category.CategoryID }, null)
+            &nbsp;|&nbsp;
+            @Html.ActionLink("Remove", "RemoveCategory", "Article", new { categoryId = category.CategoryID }, null)
+        </div>
+        @Html.Partial("Article/CategoryItem", category)
+        <hr />
+    }
+</div>
+
+@section SidebarContent
+{
+  @Html.Partial("Article/AdminSidebar")
+}

@@ -1,0 +1,65 @@
+﻿@helper ImageRatingUrl(double value)
+    {
+			
+    //double value = ViewData.Model.AverageRating;
+    string url = "/Content/images/stars{0}.gif";
+    if (value <= 1.3)
+    {
+        url = String.Format(url, "10");
+    }
+    else if (value <= 1.8)
+    {
+        url = String.Format(url, "15");
+    }
+    else if (value <= 2.3)
+    {
+        url = String.Format(url, "20");
+    }
+    else if (value <= 2.8)
+    {
+        url = String.Format(url, "25");
+    }
+    else if (value <= 3.3)
+    {
+        url = String.Format(url, "30");
+    }
+    else if (value <= 3.8)
+    {
+        url = String.Format(url, "35");
+    }
+    else if (value <= 4.3)
+    {
+        url = String.Format(url, "40");
+    }
+    else if (value <= 4.8)
+    {
+        url = String.Format(url, "45");
+    }
+    else
+    {
+        url = String.Format(url, "50");
+    }
+
+    @url;
+}
+<div id="article-@ViewData.Model.ArticleID" class="article">
+    <img src="@ViewData.Model.Category.ImageUrl" class="category-image" 
+    title="@Html.Encode(Model.Category.Title)" alt=""/>
+    <h3>
+        @Html.ActionLink(ViewData.Model.Title as string, "ViewArticle", new { id = ViewData.Model.ArticleID, path = ViewData.Model.Path })</h3>
+    <p>
+        @Html.Encode(!String.IsNullOrEmpty(ViewData.Model.Abstract) ? Model.Abstract : Model.Body)</p>
+    <ul>
+        <li><strong>Rating: </strong>@ViewData.Model.Votes @(ViewData.Model.Votes <= 1 ? "user has" : "users have")
+            rated this article
+            @if (ViewData.Model.AverageRating > 0)
+            { 
+                <img src="@ImageRatingUrl(ViewData.Model.AverageRating)" alt="@ViewData.Model.AverageRating" />
+            }
+        </li>
+        <li><strong>Posted By: </strong>@ViewData.Model.AddedBy</li>
+        <li><strong>Views: </strong>this article has been read @ViewData.Model.ViewCount
+            times</li>
+        <li><strong>Location: </strong>@ViewData.Model.Location</li>
+    </ul>
+</div>

@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "RemovePoll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("Message");
+@if (ViewData.Model != null)
+{ 
+    <form method="post" action="@Url.Action("RemovePoll", "Poll", new { pollId = ViewData.Model.PollID })" class="poll-remove">
+    <button type="submit" name="remove" value="yes" class="yes">
+        yes</button>
+    <button type="submit" name="remove" value="no" class="no">
+        no</button>
+    </form>
+}
+
+@section SidebarContent
+{
+    Html.Partial("Poll/AdminSidebar")
+}
+

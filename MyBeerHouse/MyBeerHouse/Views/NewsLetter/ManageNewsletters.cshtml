@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "ManageNewsletters";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+Html.Partial("/Newsletter/NewsletterStatus", ViewData.Model)
+
+<p>
+    @Html.ActionLink("Create Newsletter", "CreateNewsletter")</p>
+@section ScriptContent
+{
+    <script src="@Url.Content("~/scripts/tinymce.3.4.5/tiny_mce_src.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/content/scripts/manage-newsletter.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        setInterval(UpdateStatus, 4000);
+    </script>
+}
