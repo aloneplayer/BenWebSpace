@@ -1,0 +1,31 @@
+@font-face
+{
+    font-family: 'IcoMoon';
+    src: url('../media/jui/fonts/IcoMoon.eot');
+    src: url('../media/jui/fonts/IcoMoon.eot?#iefix') format('embedded-opentype'), url('../media/jui/fonts/IcoMoon.woff') format('woff'), url('../media/jui/fonts/IcoMoon.ttf') format('truetype'), url('../media/jui/fonts/IcoMoon.svg#IcoMoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"]
+{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+
+    [class^="icon-"]:before, [class*=" icon-"]:before
+    {
+        font-family: 'IcoMoon';
+        font-style: normal;
+        speak: none;
+    }
+/*
+[class^='icon-'] - classes starting with 'icon-' (eg. class='icon-blah blah')
+[class$='-icon'] - classes ending with '-icon'   (eg. class='blah blah-icon')
+[class*='icon']  - classes containing 'icon'     (eg. class='blah xxx-icon-blah')
+
+*/
+/*  p::before { content: "Hello world!"; }  inserts content before every p element*/
+/*  element:before  { style properties }*/ /* CSS2 obsolete syntax (only needed to support IE8) */

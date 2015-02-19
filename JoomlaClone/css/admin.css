@@ -1,0 +1,156 @@
+/*
+In the nav bar
+    |                 container-fluid                      |                   
+      | Logo image |          nav-collapse              |
+                      | menu    brand      nav-user  |    
+*/
+.navbar .admin-logo
+{
+    /*Logo image in the navbar*/
+    float: left;
+    padding: 7px 12px 0px 15px;
+    font-size: 16px;
+    color: #d9d9d9;
+}
+
+    .navbar .admin-logo:hover
+    {
+        /*Highlight logo image in the navbar*/
+        color: #ffffff;
+    }
+
+.navbar-inverse .brand
+{
+    /*color of the brand in navbar*/
+    color: #d9d9d9;
+}
+
+.navbar .brand
+{
+    /*brand in the navbar*/
+    float: right;
+    display: block;
+    padding: 6px 10px;
+    margin-left: -20px;
+    font-size: inherit;
+    font-weight: normal;
+}
+
+.navbar-inverse .brand:hover,
+.navbar-inverse .brand:focus
+{
+    /*Highlight the brand*/
+    color: #fff;
+}
+
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a
+{
+    color: #d9d9d9;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+.navbar-inverse .navbar-inner
+{
+    background-color: #13294a;
+    background-image: -moz-linear-gradient(top,#152d53,#10223e);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#152d53),to(#10223e));
+    background-image: -webkit-linear-gradient(top,#152d53,#10223e);
+    background-image: -o-linear-gradient(top,#152d53,#10223e);
+    /*background of the navbar*/
+    background-image: linear-gradient(to bottom,#152d53,#10223e);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff142c52', endColorstr='#ff0f213e', GradientType=0);
+    border-color: #0b172a;
+}
+
+.page-title [class^="icon-"], .page-title [class*=" icon-"]
+{
+    margin-right: 16px;
+}
+/*End of nav bar*/
+
+/* Header Section*/
+.header
+{
+    background-color: #184a7d;
+    background-image: -moz-linear-gradient(top,#17568c,#1a3867);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#17568c),to(#1a3867));
+    background-image: -webkit-linear-gradient(top,#17568c,#1a3867);
+    background-image: -o-linear-gradient(top,#17568c,#1a3867);
+    background-image: linear-gradient(to bottom,#17568c,#1a3867);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff17568c', endColorstr='#ff1a3867', GradientType=0);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 5px 25px;
+}
+
+.page-title
+{
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.logo
+{
+    width: 100%;
+    max-width: 143px;
+    height: auto;
+}
+
+
+.header .container-logo
+{
+    float: right;
+    text-align: right;
+}
+
+
+/* End of Heder Section*/
+/*
+    nav-collapse
+
+*/
+
+
+
+/* icons in admin page*/
+.icon-home:before
+{
+    content: "\21";
+}
+
+.icon-joomla:before
+{
+    content: "\e200";
+}
+
+.icon-home-2:before
+{
+    content: "\e250";
+}
+
+.icon-out-2:before
+{
+    content: "\e024";
+}
+
+.icon-share-alt:before
+{
+    content: "\26";
+}
+
+.icon-minus-2:before
+{
+    content: "\5e";
+}
+
+.icon-envelope:before
+{
+    content: "\4d";
+}
+/* end of icons*/

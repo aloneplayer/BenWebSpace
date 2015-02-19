@@ -1,0 +1,64 @@
+﻿.control-group
+{
+    margin-bottom: 9px;
+}
+
+/*display the icon (prepend add-on) for the input*/
+.input-append .add-on, .input-prepend .add-on
+{
+    display: inline-block; /*important*/
+    width: auto;
+    height: 18px;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.controls .btn-group.btn-group-yesno > .btn
+{
+    min-width: 84px;
+    padding: 2px 12px;
+}
+
+.input-append, .input-prepend
+{
+    display: inline-block;
+    margin-bottom: 9px;
+    vertical-align: middle;
+    font-size: 0;
+    white-space: nowrap; /*display controls in line, now wap*/
+}
+
+    /**/
+    .input-append .add-on, .input-prepend .add-on, .input-prepend .btn
+    {
+        vertical-align: top;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    /*
+
+    .input-prepend.input-append .add-on:first-child,
+    .input-prepend.input-append .btn:first-child
+    {
+        margin-right: -1px;
+        -webkit-border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /*:last-child set property for the element that is the last child of its parent:*/
+    .input-prepend.input-append .btn:last-child
+    {
+        margin-left: -1px;
+        -webkit-border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+    }

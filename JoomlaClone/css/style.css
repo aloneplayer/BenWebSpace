@@ -1,0 +1,74 @@
+/*Define UI element style*/
+body
+{
+    padding-top: 30px;
+    height: 100%;
+    display: block;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    background-color: #fff;
+}
+
+div
+{
+    display: block;
+}
+
+.element-invisible
+{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+hr
+{
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+a
+{
+    color: #08c;
+    text-decoration: none;
+}
+
+p
+{
+    /*Control the location of p element in navbar-fixed-bottom*/
+    display: block;
+    margin: 0 0 9px; /*top, right and left, bottom*/
+}
+
+strong, b
+{
+    font-weight: bold;
+}
+
+.small
+{
+    font-size: 11px;
+}
+
+fieldset
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+    fieldset.fieldbox
+    {
+        padding: 10px;
+        margin: 30px;
+        border:2px solid green;
+    }

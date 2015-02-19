@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link href="./images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="./css/admin.css" type="text/css" />
+    <link rel="stylesheet" href="./css/icons.css" type="text/css" />
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/statusbar.css" type="text/css">
+    <link rel="stylesheet" href="./css/button.css" type="text/css">
+    <link rel="stylesheet" href="./css/menu.css" type="text/css">
+    <!--<link rel="stylesheet" href="./css/test.css" type="text/css">-->
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ()
+        {
+            jQuery('.hasTooltip').tooltip({ "html": true, "container": "body" });
+        });
+    </script>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="admin-logo" href="administrator"><span class="icon-joomla"></span></a>
+                <div class="nav-collapse">
+                    <!--User Icon Menu-->
+                    <ul class="nav nav-user pull-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/administrator/index.php">
+                                <span class="icon-cog"></span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <span>
+                                        <span class="icon-user"></span>
+                                        <strong>Super User</strong>
+                                    </span>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="">
+                                    <a href="edit">Edit Account</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="">
+                                    <a href="logout">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--End of User Icon Menu-->
+                    <a class="brand visible-desktop visible-tablet" href="Homepage" title="Preview JoomlaTest" target="_blank">JoomlaTest					<span class="icon-out-2 small"></span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-logo">
+            <img src="./images/logo.png" class="logo" alt="JoomlaTest">
+        </div>
+        <div class="container-title">
+            <h1 class="page-title">
+                <span class="icon-home-2 cpanel"></span>
+                Control Panel
+            </h1>
+
+        </div>
+    </header>
+    <!--End of Header-->
+    <div style="margin-bottom: 20px"></div>
+
+    <!-- Begin Status Module -->
+    <div id="status" class="navbar navbar-fixed-bottom hidden-phone">
+        <div class="btn-toolbar">
+            <div class="btn-group pull-right">
+                <p>
+                    Joomla! 3.3.6	&nbsp;—&nbsp;
+                    © 2015 JoomlaClone
+                </p>
+            </div>
+            <div class="btn-group viewsite">
+                <a href="http://localhost/joomla3.3.6/" target="_blank">
+                    <i class="icon-share-alt"></i> View Site
+                </a>
+            </div>
+            <div class="btn-group divider"></div>
+            <div class="btn-group loggedin-users">
+                <span class="badge">0</span> Visitors
+            </div>
+            <div class="btn-group backloggedin-users">
+                <span class="badge">1</span> Admin
+            </div>
+
+            <div class="btn-group logout">
+                <a href="">
+                    <i class="icon-minus-2"></i> Log out
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Status Module -->
+</body>
+</html>

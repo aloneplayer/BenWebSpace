@@ -1,0 +1,25 @@
+﻿/*
+/*hide some elements when the screen width < 767
+*/
+@media (max-width: 767px)
+{
+    .hidden-desktop
+    {
+        display: inherit !important;
+    }
+
+    .visible-desktop
+    {
+        display: none !important;
+    }
+
+    .visible-phone
+    {
+        display: inherit !important;
+    }
+
+    .hidden-phone
+    {
+        display: none !important;
+    }
+}

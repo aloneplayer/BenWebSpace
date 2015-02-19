@@ -1,0 +1,70 @@
+﻿#status
+{
+    background: #EDEDED;
+    border-top: 1px solid #DDDDDD;
+    padding: 2px 10px 4px 10px;
+    -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8) inset, 0px -15px 15px rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8) inset, 0px -15px 15px rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8) inset, 0px -15px 15px rgba(255, 255, 255, 0.6);
+    color: #999999;
+}
+
+    #status .btn-toolbar,
+    #status p
+    {
+        margin: 0px;
+    }
+
+    #status .btn-toolbar,
+    #status .btn-group
+    {
+        font-size: 12px;
+    }
+
+    #status a
+    {
+        color: #999999;
+    }
+
+/*
+    The padding was set 2 times, the last one will override the others,
+    the order is very importent
+
+*/
+.badge
+{
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 10.998px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #fff;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: #999;
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+/* 
+/* Icons in admin page
+*/
+.icon-share-alt:before
+{
+    content: "\26";
+}
+
+.icon-minus-2:before
+{
+    content: "\5e";
+}
+
+.icon-envelope:before
+{
+    content: "\4d";
+}
+/* end of icons*/
