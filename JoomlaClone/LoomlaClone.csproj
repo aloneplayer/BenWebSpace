@@ -43,7 +43,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Admin.html" />
+    <Content Include="BootstrapDropdown.html" />
     <Content Include="css\admin.css" />
+    <Content Include="css\bootstrap-dropdown.css" />
+    <Content Include="css\bootstrap.css" />
     <Content Include="css\button.css" />
     <Content Include="css\controlgroup.css" />
     <Content Include="css\icons.css" />

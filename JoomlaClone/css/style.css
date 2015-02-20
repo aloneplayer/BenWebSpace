@@ -70,5 +70,70 @@ fieldset
     {
         padding: 10px;
         margin: 30px;
-        border:2px solid green;
+        border: 2px solid green;
     }
+
+ul,
+ol
+{
+    padding: 0;
+    margin: 0 0 9px 25px;
+}
+
+    ul ul,
+    ul ol,
+    ol ol,
+    ol ul
+    {
+        margin-bottom: 0;
+    }
+
+li
+{
+    line-height: 18px;
+}
+
+ul.unstyled,
+ol.unstyled
+{
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.inline,
+ol.inline
+{
+    margin-left: 0;
+    list-style: none;
+}
+
+    ul.inline > li,
+    ol.inline > li
+    {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+dl
+{
+    margin-bottom: 18px;
+}
+
+dt,
+dd
+{
+    line-height: 18px;
+}
+
+dt
+{
+    font-weight: bold;
+}
+
+dd
+{
+    margin-left: 9px;
+}
